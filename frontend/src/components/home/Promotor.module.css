@@ -1,0 +1,148 @@
+.section {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  width: 100%;
+  padding: 0 var(--content-padding-desktop);
+  background-color: var(--color-bg-secondary);
+}
+
+.card {
+  display: flex;
+  align-items: stretch;
+  gap: 80px;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  justify-content: center;
+  gap: var(--space-16);
+  flex: 1;
+  padding: var(--space-40) 0;
+  min-width: 0;
+}
+
+.kicker {
+  color: var(--color-accent-primary);
+}
+
+.title {
+  color: var(--color-text-primary);
+}
+
+.description {
+  color: var(--color-text-secondary);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: var(--space-12);
+}
+
+.ctaButton {
+  width: 169px;
+}
+
+.feats {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+.featCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-24);
+  min-height: 160px;
+  padding: var(--space-40) var(--content-padding-desktop);
+  border-right: 1px solid var(--color-bg-elevated);
+}
+
+.featCard:nth-child(odd) {
+  border-left: 1px solid var(--color-bg-elevated);
+}
+
+.featCard:nth-child(-n + 2) {
+  border-bottom: 1px solid var(--color-bg-elevated);
+}
+
+.featIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  color: var(--color-accent-primary);
+}
+
+.featTitle {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 1279px) {
+  .section {
+    padding: 0 var(--space-40);
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .feats {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: var(--space-40);
+  }
+
+  .featCard {
+    padding: var(--space-32);
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 0 var(--content-padding-mobile);
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .left {
+    padding: var(--space-40) var(--content-padding-mobile);
+    align-items: center;
+    text-align: center;
+  }
+
+  .actions {
+    align-items: center;
+    gap: var(--space-24);
+  }
+
+  .ctaButton {
+    width: 100%;
+  }
+
+  .feats {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+    padding-bottom: var(--space-40);
+  }
+
+  .featCard,
+  .featCard:nth-child(odd),
+  .featCard:nth-child(-n + 2) {
+    min-height: 0;
+    padding: var(--space-32);
+    border: 1px solid var(--color-bg-elevated);
+    border-radius: var(--radius-xl);
+  }
+}

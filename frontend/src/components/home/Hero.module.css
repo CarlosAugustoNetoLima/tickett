@@ -1,0 +1,256 @@
+@keyframes heroFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heroProgressRing {
+  from {
+    stroke-dashoffset: 94.2477;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.imageWrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+
+.imagePlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-bg-elevated) 0%, var(--color-bg-secondary) 100%);
+}
+
+.imagePlaceholderIcon {
+  color: var(--color-text-muted);
+  opacity: 0.4;
+}
+
+.imagePlaceholderText {
+  color: var(--color-text-secondary);
+}
+
+.image {
+  animation: heroFade 450ms ease;
+}
+
+.progressRing {
+  flex-shrink: 0;
+  transform: rotate(-90deg);
+}
+
+.progressRingTrack {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 4;
+}
+
+.progressRingFill {
+  fill: none;
+  stroke: var(--color-accent-primary);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 94.2477;
+  stroke-dashoffset: 94.2477;
+  animation-name: heroProgressRing;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.progressRingPaused .progressRingFill {
+  animation-play-state: paused;
+}
+
+.infoBar {
+  position: relative;
+  width: 100%;
+}
+
+.infoBg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.infoBgImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: bottom;
+  filter: blur(35px);
+  animation: heroFade 450ms ease;
+}
+
+.infoBgOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-overlay);
+}
+
+.infoContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-24);
+  width: 100%;
+  padding: var(--space-24) var(--content-padding-desktop);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.ctaButton {
+  width: 210px;
+}
+
+.priceCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.priceLabel {
+  color: var(--color-text-secondary);
+}
+
+.priceValue {
+  color: var(--color-text-primary);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex: 1;
+  min-width: 0;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.metaIcon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+.metaDivider {
+  color: var(--color-text-muted);
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  flex-shrink: 0;
+}
+
+.arrowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-10);
+  border-radius: var(--radius-default);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+  transition: background-color var(--transition-default);
+}
+
+.arrowButton:hover {
+  background-color: var(--color-bg-elevated);
+}
+
+@media (max-width: 767px) {
+  .imageWrap {
+    height: 240px;
+  }
+
+  .infoBgImage {
+    height: 240px;
+  }
+
+  .infoContent {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-24);
+    padding: var(--content-padding-mobile);
+  }
+
+  .cta {
+    justify-content: flex-start;
+  }
+
+  .ctaButton {
+    width: auto;
+    flex: 1 1 0;
+  }
+
+  .priceCol {
+    flex-shrink: 0;
+  }
+
+  .meta {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--space-8);
+  }
+
+  .metaItem {
+    justify-content: flex-start;
+  }
+
+  .metaDivider {
+    display: none;
+  }
+
+  .arrows {
+    position: absolute;
+    top: -62px;
+    right: var(--content-padding-mobile);
+    justify-content: flex-end;
+  }
+
+  .arrowButton {
+    background-color: rgba(21, 21, 24, 0.8);
+    border: 1px solid var(--color-border-default);
+    backdrop-filter: blur(4px);
+  }
+}

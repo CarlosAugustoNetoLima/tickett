@@ -1,0 +1,620 @@
+{
+  "metadata": {
+    "title": "Tickett.com — Tickets for the best events",
+    "description": "Buy tickets for concerts, parties, theatre, conferences and more in Portugal and across Europe. Secure checkout and tickets delivered by email."
+  },
+  "localeSwitcher": {
+    "label": "Language"
+  },
+  "nav": {
+    "eventos": "Events",
+    "venda": "Sell Your Event",
+    "reenviarBilhete": "Resend Ticket",
+    "searchPlaceholder": "Search events, artists...",
+    "searchAria": "Search",
+    "clearSearchAria": "Clear search",
+    "categoriesAll": "All",
+    "filterDate": "Date",
+    "filterLocal": "Location",
+    "filterPreco": "Price",
+    "filterOrdenar": "Sort:"
+  },
+  "mobileMenu": {
+    "eventos": "Events",
+    "venda": "Sell your event",
+    "reenviarBilhete": "Resend ticket",
+    "searchPlaceholder": "Search events, artists...",
+    "searchAria": "Search",
+    "menuAria": "Menu",
+    "go": "Go"
+  },
+  "footer": {
+    "tagline": "Fast, Safe and Easy — tickets since 2012",
+    "columns": {
+      "company": {
+        "title": "Tickett.com",
+        "sobre": "About us",
+        "termos": "Terms and conditions",
+        "privacidade": "Privacy",
+        "cookies": "Cookie policy",
+        "acessibilidade": "Accessibility"
+      },
+      "support": {
+        "title": "Customer support",
+        "contacto": "Contact us",
+        "reenviarBilhete": "Resend Ticket",
+        "venda": "Sell your event",
+        "litigios": "Alternative dispute resolution",
+        "reclamacoes": "Online complaints book"
+      },
+      "social": {
+        "title": "Social media",
+        "instagram": "Instagram"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "subscribe": "Subscribe for updates",
+        "placeholder": "Your email",
+        "submit": "Subscribe",
+        "success": "You're subscribed.",
+        "error": "We couldn't subscribe you. Please try again.",
+        "invalid": "Enter a valid email address.",
+        "consent": "You can unsubscribe at any time. See how we handle your data in our <link>Privacy policy</link>."
+      }
+    },
+    "copyright": "© {year} Tickett.com. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "cta": "Buy tickets",
+      "priceFrom": "from",
+      "prev": "Previous",
+      "next": "Next",
+      "imagePlaceholder": "Image not yet uploaded"
+    },
+    "top10": {
+      "kicker": "TOP 10",
+      "title": "Featured Events",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "featuredGrid": {
+      "banner": "<accent>Hundreds</accent> of events all over the world.",
+      "seeMore": "See more"
+    },
+    "whyChooseUs": {
+      "kicker": "CHOOSE TICKETT.COM",
+      "title": "Why choose Tickett.com?",
+      "features": {
+        "bilhetes": {
+          "title": "Official Tickets",
+          "description": "We work directly with promoters and venues to guarantee 100% official tickets."
+        },
+        "whatsapp": {
+          "title": "Get it on WhatsApp",
+          "description": "Digital ticket sent straight to your WhatsApp. Faster, simpler and safer."
+        },
+        "mapa": {
+          "title": "All Over the World",
+          "description": "The largest selection of concerts and events from all over the world in one place."
+        },
+        "gestao360": {
+          "title": "360º Management",
+          "description": "Centralise sales, access control, communication and financial management on a single platform, designed to simplify every stage of organising your events."
+        },
+        "websites": {
+          "title": "Custom Websites",
+          "description": "We build exclusive websites for promoters and artists, fully aligned with each brand's identity. Every project is developed to deliver an intuitive experience, strengthen your digital presence and drive sales."
+        },
+        "marketing": {
+          "title": "Marketing & Performance",
+          "description": "We develop and run marketing strategies with email, WhatsApp and digital advertising campaigns, increasing your event's visibility and boosting ticket sales."
+        },
+        "acessos": {
+          "title": "Access Control",
+          "description": "Ensure fast, secure entry with Tickett.com's access control technology. Monitor capacity in real time, validate tickets instantly and reduce the risk of fraud."
+        },
+        "equipas": {
+          "title": "Operations Teams",
+          "description": "We provide specialist teams to reinforce your event's operation, covering box office, access control, sales, merchandising, audience assistance and technical support."
+        },
+        "integracoes": {
+          "title": "Technology Integrations",
+          "description": "The Tickett.com platform integrates with a wide range of equipment and systems, adapting to the needs of each project to guarantee an efficient, uninterrupted operation."
+        },
+        "merchandising": {
+          "title": "Merchandising",
+          "description": "Sell merchandise, exclusive products and add-on experiences through Tickett.com's sales channels, with centralised management of sales, stock and operations in real time."
+        },
+        "suporte": {
+          "title": "Specialist Support",
+          "description": "Our team supports promoters and partners before, during and after every event, providing technical and operational assistance, remote or on-site, to guarantee a continuous, uninterrupted operation."
+        }
+      },
+      "whatsappDemo": {
+        "confirmed": "🎟️ Your ticket is confirmed!",
+        "instructions": "Show the QR code at the door. Enjoy the show! 🎶",
+        "thanks": "Thank you! 🙌"
+      }
+    },
+    "alertas": {
+      "title": "Never miss a concert again.",
+      "description": "Get an email when your favourite artist announces a show.",
+      "placeholder": "Your email address",
+      "button": "I want alerts",
+      "disclaimer": "You can cancel anytime. <link>Privacy policy</link>"
+    },
+    "promotor": {
+      "kicker": "Are you a promoter?",
+      "title": "Sell your event with Tickett.com",
+      "description": "Everything you need to sell out venues: online ticketing, check-in, payments and dedicated support.",
+      "cta": "Sell your event",
+      "features": {
+        "bilheteira": "Online Ticketing",
+        "checkin": "Simple Check-in",
+        "pagamentos": "Secure Payments",
+        "apoio": "Technical Support"
+      }
+    }
+  },
+  "card": {
+    "imagePlaceholder": "Image not yet uploaded",
+    "priceFrom": "from"
+  },
+  "eventos": {
+    "destaques": "Featured Events",
+    "todos": "All events",
+    "count": "{count, plural, one {# event} other {# events}}",
+    "resultsFor": "Results for \"{query}\"",
+    "resultsForIn": "Results for \"{query}\" in {category}",
+    "noResults": "No events found for \"{query}\".",
+    "noResultsFilters": "There are no events matching these filters. Try changing the city, price or dates."
+  },
+  "filters": {
+    "todosLocais": "All locations",
+    "escolherData": "Choose date",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "period": "Period: ",
+    "selectPeriod": "Select a period",
+    "clear": "Clear",
+    "apply": "Apply",
+    "filtrar": "Filter",
+    "filtrosAria": "Filters",
+    "clearFilters": "Clear filters ({count})",
+    "clearDateAria": "Clear date filter",
+    "clearLocalAria": "Clear location filter",
+    "clearPrecoAria": "Clear price filter",
+    "preco": {
+      "qualquer": "Any price",
+      "gratuito": "Free",
+      "ate-25": "Up to €25",
+      "25-50": "€25 – €50",
+      "50-100": "€50 – €100",
+      "100-200": "€100 – €200",
+      "acima-200": "Above €200"
+    },
+    "ordenar": {
+      "populares": "Popular",
+      "data": "Date",
+      "preco_asc": "Lowest price",
+      "preco_desc": "Highest price"
+    }
+  },
+  "calendar": {
+    "quickDates": {
+      "hoje": "Today",
+      "amanha": "Tomorrow",
+      "fim-de-semana": "This weekend",
+      "proxima-semana": "Next week",
+      "este-mes": "This month",
+      "proximo-mes": "Next month"
+    }
+  },
+  "bottomSheet": {
+    "back": "Back"
+  },
+  "venda": {
+    "title": "Sell your event",
+    "description": "Submit your event for ticket sales on Tickett.com.",
+    "wizard": {
+      "ariaLabel": "Sell your event",
+      "alertGeneric": "There are required fields missing or with invalid data. Please check the fields marked below.",
+      "continuar": "Continue",
+      "confirmar": "Confirm",
+      "submitError": "We couldn't send your request. Please try again in a few minutes."
+    },
+    "topBar": {
+      "back": "Back",
+      "close": "Close",
+      "progressAria": "Submission progress"
+    },
+    "steps": {
+      "promotor": "Promoter",
+      "evento": "Event",
+      "bilhetes": "Tickets",
+      "revisao": "Review"
+    },
+    "stepPromotor": {
+      "heading": "Promoter Details",
+      "nome": {
+        "label": "Contact Name",
+        "placeholder": "e.g. Tiago Santos"
+      },
+      "entidade": {
+        "label": "Company / Organisation",
+        "placeholder": "e.g. Eventos & Companhia, Lda"
+      },
+      "nif": {
+        "label": "Tax ID (NIF)",
+        "placeholder": "e.g. 123456789"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "tiago@example.com"
+      },
+      "telefone": {
+        "label": "Phone"
+      },
+      "website": {
+        "label": "Website or social media",
+        "placeholder": "www.example.com or @instagram"
+      }
+    },
+    "stepEvento": {
+      "heading": "Event Details",
+      "nome": {
+        "label": "Event name",
+        "placeholder": "e.g. Summer Festival"
+      },
+      "categoria": {
+        "label": "Category"
+      },
+      "descricao": {
+        "label": "Description",
+        "placeholder": "Describe the event"
+      },
+      "data": {
+        "label": "Event date"
+      },
+      "abertura": {
+        "label": "Doors open"
+      },
+      "horaInicio": {
+        "label": "Start time"
+      },
+      "fimVendasData": {
+        "label": "Sales end - date"
+      },
+      "fimVendasHora": {
+        "label": "Sales end - time"
+      },
+      "recinto": {
+        "label": "Venue",
+        "placeholder": "e.g. Coliseu dos Recreios"
+      },
+      "morada": {
+        "label": "Address",
+        "placeholder": "Street, number, postal code"
+      },
+      "cidade": {
+        "label": "City",
+        "placeholder": "e.g. Lisbon"
+      },
+      "pais": {
+        "label": "Country"
+      },
+      "imagemPrincipal": {
+        "label": "Main image - 1438×959",
+        "mobileHint": "JPG, PNG or WebP, 1438×959 px. Up to 5 MB."
+      },
+      "banner": {
+        "label": "Banner - 1430×340",
+        "mobileHint": "JPG, PNG or WebP, 1430×340 px. Up to 5 MB."
+      },
+      "redesSociais": {
+        "label": "Images / videos for social media",
+        "mobileHint": "You can attach several images or videos. Up to 50 MB each."
+      },
+      "hintDesktop": "You can upload up to 5 images or videos (up to 50 MB each) - select several at once from your media to add more."
+    },
+    "stepBilhetes": {
+      "heading": "Ticketing",
+      "nomeBilhete": {
+        "label": "Ticket name",
+        "placeholder": "e.g. General, VIP, Stalls A"
+      },
+      "lote": {
+        "label": "Batch",
+        "placeholder": "e.g. 1st Batch"
+      },
+      "preco": {
+        "label": "Price (€)"
+      },
+      "quantidade": {
+        "label": "Quantity (Capacity)",
+        "placeholder": "e.g. 200"
+      },
+      "removerLoteAria": "Remove batch",
+      "adicionarLote": "Add batch",
+      "removerBilhete": "Remove ticket",
+      "adicionarTipo": "Add ticket type",
+      "lotacaoTotal": "Total capacity: ",
+      "bilhetesSuffix": "tickets",
+      "restricaoIdade": {
+        "label": "Age restriction"
+      },
+      "caracteristicas": "Event features",
+      "caracteristicasHint": "(select all that apply)",
+      "lotacaoReduzida": {
+        "label": "Reduced mobility capacity",
+        "placeholder": "e.g. 10"
+      },
+      "observacoes": {
+        "label": "Other notes",
+        "placeholder": "Any additional details we should know"
+      }
+    },
+    "stepRevisao": {
+      "heading": "Review and Submit",
+      "promotor": "Promoter",
+      "evento": "Event",
+      "bilhetica": "Ticketing",
+      "anexos": "Attachments",
+      "responsavel": "Contact",
+      "nif": "Tax ID (NIF)",
+      "email": "Email",
+      "telefone": "Phone",
+      "nome": "Name",
+      "categoria": "Category",
+      "descricao": "Description",
+      "data": "Date",
+      "horaInicio": "Start time",
+      "local": "Venue",
+      "cidadePais": "City / Country",
+      "bilhetes": "Tickets",
+      "lotacaoTotal": "Total capacity",
+      "restricaoIdade": "Age restriction",
+      "caracteristicas": "Features",
+      "lotacaoReduzida": "Reduced mobility capacity",
+      "imagemPrincipal": "Main image",
+      "banner": "Banner",
+      "redesSociais": "Social media",
+      "disclaimer": "I declare that this information is true and I accept the <terms>Terms and Conditions</terms> of tickett.com. *",
+      "bilhetesSuffix": "tickets"
+    },
+    "stepSucesso": {
+      "title": "EVENT SUBMITTED!",
+      "subtitle": "Thank you. Our team has received your request and will get in touch with you shortly, including to collect the event images. You can save a copy of the submission below.",
+      "download": "Download receipt",
+      "close": "Close"
+    },
+    "validation": {
+      "nomeResponsavel": "Enter the contact name.",
+      "nif": "Enter the tax ID (NIF).",
+      "nifFormato": "The tax ID must have 9 digits.",
+      "email": "Enter the email.",
+      "emailFormato": "Enter a valid email.",
+      "telefone": "Enter the phone number.",
+      "nomeEvento": "Enter the event name.",
+      "categoria": "Select a category.",
+      "descricao": "Enter a description.",
+      "dataEvento": "Enter the event date.",
+      "horaInicio": "Enter the start time.",
+      "recinto": "Enter the venue.",
+      "cidade": "Enter the city.",
+      "pais": "Enter the country.",
+      "imagemPrincipal": "Upload the main image.",
+      "banner": "Upload the banner.",
+      "nomeBilhete": "Enter the ticket name.",
+      "precoBilhete": "Enter a valid price.",
+      "quantidadeBilhete": "Enter a valid quantity.",
+      "restricaoIdade": "Select the age restriction.",
+      "aceitaTermos": "You must accept the Terms and Conditions to submit the event."
+    },
+    "options": {
+      "categoria": {
+        "concerto": "Concert",
+        "festival": "Festival",
+        "teatro": "Theatre",
+        "comedia": "Comedy",
+        "desporto": "Sports",
+        "conferencia": "Conference",
+        "workshop": "Workshop",
+        "familia": "Family",
+        "outro": "Other"
+      },
+      "restricaoIdade": {
+        "todas-idades": "All ages",
+        "m3": "3+",
+        "m6": "6+",
+        "m12": "12+",
+        "m16": "16+",
+        "m18": "18+"
+      },
+      "caracteristicas": {
+        "lugares-marcados": "Reserved seating",
+        "acessos-especiais": "Special access / reduced mobility",
+        "descontos": "Discounts / promotions"
+      }
+    },
+    "receipt": {
+      "header": "TICKETT.COM — SUBMISSION RECEIPT",
+      "generatedAt": "Generated on: {date}",
+      "promotor": "PROMOTER",
+      "responsavel": "Contact",
+      "entidade": "Company",
+      "nif": "Tax ID (NIF)",
+      "email": "Email",
+      "telefone": "Phone",
+      "website": "Website",
+      "evento": "EVENT",
+      "nome": "Name",
+      "categoria": "Category",
+      "descricao": "Description",
+      "data": "Date",
+      "aberturaPortas": "Doors open",
+      "horaInicio": "Start time",
+      "fimVendas": "Sales end",
+      "local": "Venue",
+      "morada": "Address",
+      "cidadePais": "City / Country",
+      "bilhetica": "TICKETING",
+      "loteUnico": "Single batch",
+      "lotacaoTotal": "Total capacity",
+      "bilhetesSuffix": "tickets",
+      "restricaoIdade": "Age restriction",
+      "caracteristicas": "Features",
+      "observacoes": "Notes",
+      "footer": "Thank you for submitting your event to tickett.com.\nOur team will be in touch shortly."
+    }
+  },
+  "form": {
+    "fields": {
+      "optional": "(optional)",
+      "selectPlaceholder": "- Select -",
+      "noFileSelected": "No file selected",
+      "filesSelected": "{count} files selected",
+      "chooseFile": "Choose file",
+      "checkingImage": "Checking image...",
+      "phonePlaceholder": "Your mobile number",
+      "dialAria": "Country code",
+      "escolherData": "Choose date",
+      "fileTooLargeOne": "The file {names} exceeds the {max} MB limit.",
+      "fileTooLargeMany": "The files {names} exceed the {max} MB limit.",
+      "dimensionMismatchOne": "The image \"{name}\" is {width}×{height} px — {reqWidth}×{reqHeight} px is required.",
+      "dimensionMismatchMany": "{count} images don't match the required dimensions ({reqWidth}×{reqHeight} px)."
+    },
+    "countries": {
+      "Portugal": "Portugal",
+      "Espanha": "Spain",
+      "França": "France",
+      "Reino Unido": "United Kingdom",
+      "Brasil": "Brazil",
+      "Angola": "Angola",
+      "Moçambique": "Mozambique",
+      "Cabo Verde": "Cape Verde",
+      "Suíça": "Switzerland",
+      "Luxemburgo": "Luxembourg",
+      "Alemanha": "Germany",
+      "Bélgica": "Belgium",
+      "Países Baixos": "Netherlands",
+      "Itália": "Italy",
+      "Irlanda": "Ireland",
+      "Estados Unidos": "United States",
+      "Polónia": "Poland",
+      "Roménia": "Romania",
+      "Andorra": "Andorra",
+      "Suécia": "Sweden",
+      "Noruega": "Norway",
+      "Dinamarca": "Denmark",
+      "Finlândia": "Finland",
+      "Islândia": "Iceland",
+      "Estónia": "Estonia",
+      "Outro": "Other"
+    },
+    "submitting": "Submitting..."
+  },
+  "reenviarBilhete": {
+    "title": "Resend ticket",
+    "description": "Request your ticket to be resent by email.",
+    "topBar": {
+      "close": "Close"
+    },
+    "form": {
+      "heading": "Resend ticket",
+      "email": {
+        "label": "Email",
+        "placeholder": "tiago@example.com"
+      },
+      "telefone": {
+        "label": "Phone"
+      },
+      "evento": {
+        "label": "Event",
+        "placeholder": "Select the event",
+        "loading": "Looking up your events…",
+        "notFound": "No purchases found for this email",
+        "error": "We couldn't load your events",
+        "empty": "No events found for this email",
+        "hint": "Enter the email and phone number used in the purchase so we can find your events."
+      },
+      "submit": "Resend",
+      "alertGeneric": "There are required fields missing or with invalid data. Check the fields marked below.",
+      "submitError": "We couldn't send your request. Please try again.",
+      "recaptchaRequired": "Please confirm you're not a robot.",
+      "errors": {
+        "phoneMismatch": "We couldn't find a purchase with this email and phone number. Check the country code and number you used when buying.",
+        "noPurchase": "We couldn't find a paid purchase with this email for the selected event.",
+        "sendFailed": "We couldn't confirm the resend. Check your email in a few minutes and, if the ticket hasn't arrived, please try again."
+      },
+      "recaptchaNotice": "This form is protected by Google reCAPTCHA; Google's <privacy>Privacy Policy</privacy> and <terms>Terms of Service</terms> apply. The details you enter are only used to resend your ticket."
+    },
+    "validation": {
+      "email": "Enter the email.",
+      "emailFormato": "Enter a valid email.",
+      "telefone": "Enter the phone number.",
+      "telefoneFormato": "Enter a valid phone number.",
+      "evento": "Select the event."
+    },
+    "success": {
+      "title": "TICKET RESENT!",
+      "subtitle": "Your ticket was successfully resent to the email used for the purchase. Check your inbox and spam folder.",
+      "close": "Close"
+    }
+  },
+  "eventoDetalhe": {
+    "imagePlaceholder": "Image not yet uploaded",
+    "doorsLabel": "Doors {time}",
+    "about": "ABOUT THE EVENT",
+    "readMore": "Show more",
+    "readLess": "Show less",
+    "local": "VENUE",
+    "howToGetThere": "Get directions",
+    "parentalRating": "AGE RATING",
+    "promoter": "PROMOTER",
+    "videoTitle": "Event video",
+    "selectTickets": "Select tickets",
+    "salesClosed": "Online sales closed",
+    "salesClosedHint": "Tickets may be available at the venue box office",
+    "priceFrom": "From",
+    "share": {
+      "share": "SHARE",
+      "linkCopied": "LINK COPIED",
+      "emailBody": "Event link: {url}"
+    },
+    "videoPlay": "Watch video",
+    "videoNotice": "The video loads from YouTube (Google) when you press play."
+  },
+  "seo": {
+    "home": "Home",
+    "eventosTitle": "Events and tickets",
+    "eventosDescription": "Discover upcoming concerts, parties, shows and conferences and buy tickets online at Tickett.com.",
+    "categoryTitle": "{category}: events and tickets",
+    "categoryDescription": "Upcoming {category} events with tickets on sale at Tickett.com.",
+    "searchTitle": "Search: {query}",
+    "eventDescription": "Tickets for {title}, {date}, at {venue}. Secure checkout at Tickett.com.",
+    "ogTagline": "Tickets for the best events",
+    "ogSubtitle": "Concerts, parties, theatre and conferences. Secure checkout, tickets by email."
+  },
+  "consent": {
+    "title": "Cookies",
+    "description": "We use essential cookies to make the site work. With your consent, the checkout also uses the Meta Pixel (ad measurement) and Google Translate.",
+    "policy": "Cookie policy",
+    "accept": "Accept",
+    "reject": "Reject",
+    "settings": "Cookie settings"
+  },
+  "motion": {
+    "pause": {
+      "slides": "Pause highlights",
+      "video": "Pause video",
+      "animations": "Pause animations"
+    },
+    "play": {
+      "slides": "Resume highlights",
+      "video": "Play video",
+      "animations": "Resume animations"
+    }
+  }
+}

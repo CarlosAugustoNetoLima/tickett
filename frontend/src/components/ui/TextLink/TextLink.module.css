@@ -1,0 +1,10 @@
+.link {
+  color: var(--color-accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-default);
+}
+
+.link:hover {
+  color: var(--color-accent-hover);
+}

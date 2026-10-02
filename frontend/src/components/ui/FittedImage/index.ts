@@ -1,0 +1,1 @@
+export { FittedImage } from "./FittedImage";

@@ -1,0 +1,88 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-20);
+  width: 100%;
+}
+
+.compact {
+  gap: var(--space-4);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navButton {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: var(--space-8);
+  border-radius: var(--radius-default);
+  border: 1px solid var(--color-border-card);
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-primary);
+}
+
+.monthLabel {
+  color: var(--color-text-primary);
+}
+
+.weekdayRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.weekdayLabel {
+  flex: 1 0 0;
+  min-width: 0;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.week {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.day {
+  flex: 1 0 0;
+  min-width: 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background-color: transparent;
+  color: var(--color-text-primary);
+}
+
+.dayOutside {
+  opacity: 0.4;
+  color: var(--color-text-secondary);
+}
+
+.dayInRange {
+  background-color: var(--color-accent-10);
+  color: var(--color-accent-primary);
+}
+
+.dayEndpoint {
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-on-accent);
+}

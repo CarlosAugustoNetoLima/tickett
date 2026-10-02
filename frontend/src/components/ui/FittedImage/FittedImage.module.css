@@ -1,0 +1,62 @@
+.frame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.picture {
+  display: contents;
+}
+
+.image,
+.backdrop {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  z-index: 1;
+}
+
+.backdrop {
+  z-index: 0;
+  object-fit: cover;
+  transform: scale(1.25);
+  filter: blur(28px) saturate(1.4);
+}
+
+.fitCover,
+.fitCoverMobileContain {
+  object-fit: cover;
+}
+
+.fitContain,
+.fitContainMobileCover {
+  object-fit: contain;
+}
+
+.backdropMobileOnly {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .fitCoverMobileContain {
+    object-fit: contain;
+  }
+
+  .fitContainMobileCover {
+    object-fit: cover;
+  }
+
+  .backdropDesktopOnly {
+    display: none;
+  }
+
+  .backdropMobileOnly {
+    display: block;
+  }
+}

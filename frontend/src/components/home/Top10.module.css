@@ -1,0 +1,143 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+  width: 100%;
+  padding: var(--space-40) 0;
+  background-color: var(--color-bg-secondary);
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-10);
+  padding: 0 var(--content-padding-desktop);
+}
+
+.headingGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.kicker {
+  color: var(--color-accent-primary);
+}
+
+.title {
+  color: var(--color-text-primary);
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  flex-shrink: 0;
+}
+
+.arrowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-10);
+  border-radius: var(--radius-default);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+  transition: background-color var(--transition-default);
+}
+
+.arrowButton:hover {
+  background-color: var(--color-bg-elevated);
+}
+
+.track {
+  display: flex;
+  align-items: flex-end;
+  gap: 80px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 var(--content-padding-desktop) var(--space-8) var(--content-padding-desktop);
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.track::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: var(--radius-sm);
+}
+
+.track:hover {
+  scrollbar-color: var(--color-border-strong) transparent;
+}
+
+.track:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-border-strong);
+}
+
+.rankItem {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rankNumber {
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  z-index: 0;
+  transform: translateX(8px);
+  color: var(--color-bg-secondary);
+  -webkit-text-stroke: 4px var(--color-border-strong);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.rankItem > a {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: var(--space-40) 0;
+  }
+
+  .header {
+    padding: 0 var(--content-padding-mobile);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .headingGroup {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .track {
+    gap: 56px;
+    padding-right: var(--content-padding-mobile);
+    padding-left: 48px;
+  }
+
+  .rankItem > a {
+    width: min(300px, calc(100vw - 108px));
+  }
+
+  .rankNumber {
+    font-size: 120px;
+  }
+}

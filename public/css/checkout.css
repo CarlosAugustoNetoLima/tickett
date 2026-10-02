@@ -1,0 +1,283 @@
+
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+
+}
+
+body {
+	font-family: montserrat, arial, verdana;
+	background: transparent;
+	margin-bottom: 10px;
+}
+
+/*form styles*/
+#msform {
+	text-align: center;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+#msform fieldset {
+	/*background: white;*/
+	border: 0 none;
+	border-radius: 0px;
+	/*box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);*/
+	padding: 5px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+
+
+#msform input:focus, #msform textarea:focus {
+	border: 1px solid #009688;
+	outline-width: 0;
+	transition: All 0.5s ease-in;
+	-webkit-transition: All 0.5s ease-in;
+	-moz-transition: All 0.5s ease-in;
+	-o-transition: All 0.5s ease-in;
+}
+
+/*buttons*/
+#msform .action-button {
+	min-width: 50px;
+	background: #009688;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 15px;
+	cursor: pointer;
+	padding: 10px 15px;
+	margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #009688;
+}
+
+#msform .action-button-previous {
+	min-width: 50px;
+	background: #00bcd4;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 15px;
+	cursor: pointer;
+	padding: 10px 15px;
+	margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #00bcd4;
+}
+
+/*headings*/
+.fs-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/*progressbar*/
+#progressbar {
+	display: flex;
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+
+#progressbar li {
+	list-style-type: none;
+	color: #009688;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+	letter-spacing: 1px;
+}
+
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 24px;
+	height: 24px;
+	line-height: 26px;
+	display: block;
+	font-size: 12px;
+	color: #fff;
+	background: #00bcd4;
+	border-radius: 25px;
+	margin: 0 auto 10px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #00bcd4;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+	background: #009688;
+	color: white;
+}
+
+.tooltip-inner .table  {
+	background-color: #000;
+	margin-bottom: 0px;
+}
+
+.field-div {
+	min-height: 200px;
+}
+
+
+
+
+
+
+.glyphicon-spin {
+	-animation: spin .9s infinite linear;
+	-webkit-animation: spin .9s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg);}
+	to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+	from { transform: scale(1) rotate(0deg);}
+	to { transform: scale(1) rotate(360deg);}
+}
+
+
+
+.cart-resume {
+	background: url("../img/shop-icon.png") no-repeat center left;
+	padding-left: 27px;
+	color: #5ac9c3;
+	cursor: pointer;
+	position: fixed;
+    margin-top: 20px;
+	left: 10px;
+}
+
+.cart-resume  .well {
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.cart-resume-in {
+	text-align: left;
+	z-index: 775;
+	width: max-content;
+	max-height: 250px;
+	position: absolute;
+	margin-bottom: 5px;
+	bottom: 20px;
+	left: 0px;
+	overflow: auto;
+}
+.cart-resume-in h3 {
+	margin: 5px;
+}
+.table-cart-resume {
+	font-weight: normal;
+	font-size: 10px;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.table-cart-resume:last-child tr:first-child td{
+	border: 0;
+}
+
+
+.td-touchspin button {
+	padding: 6px;
+}
+.input_qty {
+	padding: 0 !important;
+	min-width: 15px;
+}
+.form-payment {
+	display: none;
+}
+
+
+
+
+/* O tip sugestion do email */
+ul.mailtip {
+float: none;
+background-color: #fcfeff;
+list-style: none;
+border: 1px solid #97bccc;
+border-radius: 0px 0px 10px 10px;
+overflow: hidden;
+border-top: none;
+}
+ul.mailtip li p {
+text-align: left;
+line-height: 30px;
+cursor: pointer;
+margin: 0 9px;
+overflow: hidden;
+word-wrap: break-word;
+height: 30px;
+}
+ul.mailtip li:last-child {
+border-radius: 0px 0px 10px 10px;
+}
+ul.mailtip li.active {
+background: #eaeaea;
+}
+ul.mailtip li.hover {
+background: #e7f6ff;
+}

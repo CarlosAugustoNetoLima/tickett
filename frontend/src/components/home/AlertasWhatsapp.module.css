@@ -1,0 +1,134 @@
+.section {
+  display: flex;
+  align-self: stretch;
+  align-items: stretch;
+  width: 100%;
+  padding: var(--space-40) var(--content-padding-desktop);
+  background-color: var(--color-bg-secondary);
+}
+
+.banner {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  gap: var(--space-32);
+  width: 100%;
+  padding: var(--space-24);
+  border: 1px solid var(--color-border-card);
+  border-radius: var(--radius-2xl);
+  background-color: var(--color-bg-tertiary);
+}
+
+.left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 14px;
+  border: 1px solid var(--color-border-card);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-accent-primary);
+}
+
+.ltext {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  color: var(--color-text-primary);
+}
+
+.description {
+  color: var(--color-text-secondary);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-10);
+  flex-shrink: 0;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-10);
+}
+
+.field {
+  width: 340px;
+}
+
+.disclaimer {
+  width: 200px;
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+.message {
+  max-width: 100%;
+  text-align: right;
+}
+
+.error {
+  color: var(--color-error);
+}
+
+.success {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: var(--space-40) var(--content-padding-mobile);
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-16);
+  }
+
+  .ltext {
+    align-items: center;
+  }
+
+  .right {
+    align-items: stretch;
+  }
+
+  .inputRow {
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  .disclaimer,
+  .message {
+    width: 100%;
+    text-align: center;
+  }
+}

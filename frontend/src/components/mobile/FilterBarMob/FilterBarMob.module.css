@@ -1,0 +1,124 @@
+.bar {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: var(--space-24);
+  width: 100%;
+  padding: var(--space-16);
+  background-color: rgba(21, 21, 24, 0.9);
+  backdrop-filter: blur(25px);
+  border-top: 1px solid var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-bg-elevated);
+}
+
+.filterButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-default);
+  flex-shrink: 0;
+}
+
+.filterIcon {
+  opacity: 0.5;
+}
+
+.filterBadge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-on-accent);
+  line-height: 1;
+}
+
+.clearAllRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--space-10) var(--space-12);
+  border-radius: var(--radius-md);
+  color: var(--color-accent-primary);
+  text-align: left;
+  transition: background-color var(--transition-default);
+}
+
+.clearAllRow:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.navRow {
+  position: relative;
+  width: 100%;
+}
+
+.navOpen {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  width: 100%;
+  padding: var(--space-10) var(--space-12);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  transition: background-color var(--transition-default);
+}
+
+.navOpen:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.navLabel {
+  flex: 1 0 0;
+  min-width: 0;
+  text-align: left;
+}
+
+.navValue {
+  flex-shrink: 0;
+  color: var(--color-accent-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+.navClearSpace {
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.navClear {
+  position: absolute;
+  top: 50%;
+  right: calc(var(--space-12) + 14px + var(--space-8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  transform: translateY(-50%);
+}
+
+.navClear:hover {
+  background-color: var(--color-accent-10);
+  color: var(--color-accent-primary);
+}
+
+@media (min-width: 1024px) {
+  .bar {
+    display: none;
+  }
+}

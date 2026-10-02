@@ -1,0 +1,69 @@
+/*
+ * Tickett.com redesign — design tokens
+ * Extraídos do Figma "Website-Lebillet" > página "Redesign v3" (node 4773:4538)
+ * via get_variable_defs no node 5006:1624.
+ *
+ * Estes tokens só afetam elementos com classes prefixadas "tkt-" (namespace
+ * novo), para não colidir com o CSS legado enquanto o redesign é feito
+ * página a página.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+	--tkt-bg-base: #0f0f11;
+	--tkt-bg-surface: #151518;
+	--tkt-bg-elevated: #1c1c20;
+	--tkt-bg-lighter: #2d2d2d;
+
+	--tkt-border-subtle: #202025;
+	--tkt-border-default: #2d2d32;
+
+	--tkt-text-primary: #ffffff;
+	--tkt-text-secondary: #afafbc;
+	--tkt-text-muted: #606069;
+	--tkt-text-dark: #07070f;
+
+	--tkt-accent-primary: #00b1e3;
+	--tkt-accent-primary-rgb: 0, 177, 227;
+	--tkt-accent-hover: #0096c7;
+
+	--tkt-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+
+	--tkt-radius-sm: 8px;
+	--tkt-radius-md: 12px;
+	--tkt-radius-lg: 16px;
+	--tkt-radius-pill: 999px;
+
+	--tkt-space-1: 4px;
+	--tkt-space-2: 8px;
+	--tkt-space-3: 12px;
+	--tkt-space-4: 16px;
+	--tkt-space-5: 24px;
+	--tkt-space-6: 32px;
+	--tkt-space-7: 48px;
+	--tkt-space-8: 60px;
+	--tkt-space-9: 80px;
+}
+
+[class^="tkt-"],
+[class*=" tkt-"] {
+	box-sizing: border-box;
+}
+
+.tkt-scope {
+	font-family: var(--tkt-font) !important;
+	color: var(--tkt-text-primary);
+}
+
+.tkt-scope * {
+	box-sizing: border-box;
+}
+
+/* Força a Inter em todo o texto dentro do redesign (o CSS legado define
+   `body { font-family: 'Quicksand' !important }` mais abaixo no documento,
+   que ganharia por ordem de origem). Exclui ícones (Font Awesome usa a
+   própria font-family via ::before/::after). */
+.tkt-scope *:not([class*="fa-"]) {
+	font-family: var(--tkt-font);
+}

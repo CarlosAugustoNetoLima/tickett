@@ -1,0 +1,620 @@
+{
+  "metadata": {
+    "title": "Tickett.com — Bilhetes para os melhores eventos",
+    "description": "Compre bilhetes para concertos, festas, teatro, conferências e outros eventos em Portugal e na Europa. Pagamento seguro e bilhete no email."
+  },
+  "localeSwitcher": {
+    "label": "Idioma"
+  },
+  "nav": {
+    "eventos": "Eventos",
+    "venda": "Venda Seu Evento",
+    "reenviarBilhete": "Reenviar Bilhete",
+    "searchPlaceholder": "Pesquisar eventos, artistas...",
+    "searchAria": "Pesquisar",
+    "clearSearchAria": "Limpar pesquisa",
+    "categoriesAll": "Todos",
+    "filterDate": "Data",
+    "filterLocal": "Local",
+    "filterPreco": "Preço",
+    "filterOrdenar": "Ordenar:"
+  },
+  "mobileMenu": {
+    "eventos": "Eventos",
+    "venda": "Venda seu evento",
+    "reenviarBilhete": "Reenviar bilhete",
+    "searchPlaceholder": "Pesquisar eventos, artistas...",
+    "searchAria": "Pesquisar",
+    "menuAria": "Menu",
+    "go": "Ir"
+  },
+  "footer": {
+    "tagline": "Rápido, Seguro e Fácil — bilhetes desde 2012",
+    "columns": {
+      "company": {
+        "title": "Tickett.com",
+        "sobre": "Sobre nós",
+        "termos": "Termos e condições",
+        "privacidade": "Privacidade",
+        "cookies": "Política de cookies",
+        "acessibilidade": "Acessibilidade"
+      },
+      "support": {
+        "title": "Apoio ao cliente",
+        "contacto": "Fale connosco",
+        "reenviarBilhete": "Reenviar Bilhete",
+        "venda": "Venda seu evento",
+        "litigios": "Resolução alternativa de litígios",
+        "reclamacoes": "Livro de reclamações online"
+      },
+      "social": {
+        "title": "Redes sociais",
+        "instagram": "Instagram"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "subscribe": "Subscreva as novidades",
+        "placeholder": "O seu email",
+        "submit": "Subscrever",
+        "success": "Subscrição efetuada com sucesso.",
+        "error": "Não foi possível subscrever. Tente novamente.",
+        "invalid": "Indique um email válido.",
+        "consent": "Pode cancelar a qualquer momento. Veja como tratamos os seus dados na <link>Política de privacidade</link>."
+      }
+    },
+    "copyright": "© {year} Tickett.com. Todos os direitos reservados."
+  },
+  "home": {
+    "hero": {
+      "cta": "Comprar bilhetes",
+      "priceFrom": "a partir de",
+      "prev": "Anterior",
+      "next": "Seguinte",
+      "imagePlaceholder": "Imagem ainda não cadastrada"
+    },
+    "top10": {
+      "kicker": "TOP 10",
+      "title": "Eventos em Destaque",
+      "prev": "Anterior",
+      "next": "Seguinte"
+    },
+    "featuredGrid": {
+      "banner": "<accent>Centenas</accent> de eventos em todo o mundo.",
+      "seeMore": "Ver mais"
+    },
+    "whyChooseUs": {
+      "kicker": "ESCOLHA TICKETT.COM",
+      "title": "Por que escolher a Tickett.com?",
+      "features": {
+        "bilhetes": {
+          "title": "Bilhetes Oficiais",
+          "description": "Trabalhamos diretamente com promotores e salas para garantir bilhetes 100% oficiais."
+        },
+        "whatsapp": {
+          "title": "Recebe por WhatsApp",
+          "description": "Bilhete digital enviado para o teu WhatsApp. Mais rápido, simples e seguro."
+        },
+        "mapa": {
+          "title": "Em Todo o Mundo",
+          "description": "A maior seleção de concertos e eventos de todo o mundo num só lugar."
+        },
+        "gestao360": {
+          "title": "Gestão 360º",
+          "description": "Centralize vendas, acessos, comunicação e gestão financeira numa única plataforma, concebida para simplificar todas as etapas da organização dos seus eventos."
+        },
+        "websites": {
+          "title": "Websites Personalizados",
+          "description": "Criamos websites exclusivos para promotores e artistas, totalmente alinhados com a identidade de cada marca. Cada projeto é desenvolvido para proporcionar uma experiência intuitiva, reforçar a presença digital e impulsionar as vendas."
+        },
+        "marketing": {
+          "title": "Marketing & Performance",
+          "description": "Desenvolvemos e gerimos estratégias de marketing com campanhas de e-mail, WhatsApp e publicidade digital, aumentando a visibilidade do seu evento e potenciando a venda de bilhetes."
+        },
+        "acessos": {
+          "title": "Controlo de Acessos",
+          "description": "Garanta entradas rápidas e seguras com a tecnologia de controlo de acessos da Tickett.com. Monitorize a lotação em tempo real, valide bilhetes instantaneamente e reduza o risco de fraude."
+        },
+        "equipas": {
+          "title": "Equipas Operacionais",
+          "description": "Disponibilizamos equipas especializadas para reforçar a operação do seu evento, assegurando serviços de bilheteira, controlo de acessos, vendas, merchandising, apoio ao público e suporte técnico."
+        },
+        "integracoes": {
+          "title": "Integrações Tecnológicas",
+          "description": "A plataforma Tickett.com integra-se com uma vasta gama de equipamentos e sistemas, adaptando-se às necessidades de cada projeto para garantir uma operação eficiente e sem interrupções."
+        },
+        "merchandising": {
+          "title": "Merchandising",
+          "description": "Venda merchandising, produtos exclusivos e experiências adicionais através dos canais de venda da Tickett.com, com gestão centralizada de vendas, stock e operação em tempo real."
+        },
+        "suporte": {
+          "title": "Suporte Especializado",
+          "description": "A nossa equipa acompanha promotores e parceiros antes, durante e após cada evento, prestando apoio técnico e operacional, remoto ou presencial, para garantir uma operação contínua e sem interrupções."
+        }
+      },
+      "whatsappDemo": {
+        "confirmed": "🎟️ O teu bilhete está confirmado!",
+        "instructions": "Apresenta o QR na entrada. Boa experiência! 🎶",
+        "thanks": "Obrigado! 🙌"
+      }
+    },
+    "alertas": {
+      "title": "Não percas nenhum concerto.",
+      "description": "Recebe um email quando o teu artista favorito anunciar um espetáculo.",
+      "placeholder": "O teu email",
+      "button": "Quero receber alertas",
+      "disclaimer": "Podes cancelar quando quiseres. <link>Política de privacidade</link>"
+    },
+    "promotor": {
+      "kicker": "És promotor?",
+      "title": "Venda o seu evento com a Tickett.com",
+      "description": "Tudo o que precisa para esgotar salas: bilheteira online, check-in, pagamentos e apoio dedicado.",
+      "cta": "Venda seu evento",
+      "features": {
+        "bilheteira": "Bilheteira Online",
+        "checkin": "Check-in Simples",
+        "pagamentos": "Pagamentos Seguros",
+        "apoio": "Apoio Técnico"
+      }
+    }
+  },
+  "card": {
+    "imagePlaceholder": "Imagem ainda não cadastrada",
+    "priceFrom": "a partir de"
+  },
+  "eventos": {
+    "destaques": "Eventos em Destaque",
+    "todos": "Todos os eventos",
+    "count": "{count, plural, one {# evento} other {# eventos}}",
+    "resultsFor": "Resultados para \"{query}\"",
+    "resultsForIn": "Resultados para \"{query}\" em {category}",
+    "noResults": "Nenhum evento encontrado para \"{query}\".",
+    "noResultsFilters": "Não há eventos com estes filtros. Experimente mudar a cidade, o preço ou as datas."
+  },
+  "filters": {
+    "todosLocais": "Todos os locais",
+    "escolherData": "Escolher data",
+    "prevMonth": "Mês anterior",
+    "nextMonth": "Próximo mês",
+    "period": "Período: ",
+    "selectPeriod": "Selecione o período",
+    "clear": "Limpar",
+    "apply": "Aplicar",
+    "filtrar": "Filtrar",
+    "filtrosAria": "Filtros",
+    "clearFilters": "Limpar filtros ({count})",
+    "clearDateAria": "Limpar filtro de data",
+    "clearLocalAria": "Limpar filtro de local",
+    "clearPrecoAria": "Limpar filtro de preço",
+    "preco": {
+      "qualquer": "Qualquer preço",
+      "gratuito": "Gratuito",
+      "ate-25": "Até €25",
+      "25-50": "€25 – €50",
+      "50-100": "€50 – €100",
+      "100-200": "€100 – €200",
+      "acima-200": "Acima de €200"
+    },
+    "ordenar": {
+      "populares": "Populares",
+      "data": "Data",
+      "preco_asc": "Menor preço",
+      "preco_desc": "Maior preço"
+    }
+  },
+  "calendar": {
+    "quickDates": {
+      "hoje": "Hoje",
+      "amanha": "Amanhã",
+      "fim-de-semana": "Este fim de semana",
+      "proxima-semana": "Próxima semana",
+      "este-mes": "Este mês",
+      "proximo-mes": "Próximo mês"
+    }
+  },
+  "bottomSheet": {
+    "back": "Voltar"
+  },
+  "venda": {
+    "title": "Venda o seu evento",
+    "description": "Submeta o seu evento para venda de bilhetes na Tickett.com.",
+    "wizard": {
+      "ariaLabel": "Venda o seu evento",
+      "alertGeneric": "Existem campos obrigatórios por preencher ou com dados inválidos. Verifique os campos assinalados.",
+      "continuar": "Continuar",
+      "confirmar": "Confirmar",
+      "submitError": "Não foi possível enviar o pedido. Tente novamente dentro de alguns minutos."
+    },
+    "topBar": {
+      "back": "Voltar",
+      "close": "Fechar",
+      "progressAria": "Progresso da submissão"
+    },
+    "steps": {
+      "promotor": "Promotor",
+      "evento": "Evento",
+      "bilhetes": "Bilhetes",
+      "revisao": "Revisão"
+    },
+    "stepPromotor": {
+      "heading": "Dados do Promotor",
+      "nome": {
+        "label": "Nome do Responsável",
+        "placeholder": "Ex: Tiago Santos"
+      },
+      "entidade": {
+        "label": "Entidade / Empresa",
+        "placeholder": "Ex: Eventos & Companhia, Lda"
+      },
+      "nif": {
+        "label": "NIF",
+        "placeholder": "Ex: 123456789"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "tiago@exemplo.pt"
+      },
+      "telefone": {
+        "label": "Telefone"
+      },
+      "website": {
+        "label": "Website ou redes sociais",
+        "placeholder": "www.exemplo.pt ou @instagram"
+      }
+    },
+    "stepEvento": {
+      "heading": "Dados do Evento",
+      "nome": {
+        "label": "Nome do evento",
+        "placeholder": "Ex: Festival de Verão"
+      },
+      "categoria": {
+        "label": "Categoria"
+      },
+      "descricao": {
+        "label": "Descrição",
+        "placeholder": "Descreva o evento"
+      },
+      "data": {
+        "label": "Data do evento"
+      },
+      "abertura": {
+        "label": "Abertura de portas"
+      },
+      "horaInicio": {
+        "label": "Hora de início"
+      },
+      "fimVendasData": {
+        "label": "Fim das vendas - data"
+      },
+      "fimVendasHora": {
+        "label": "Fim das vendas - hora"
+      },
+      "recinto": {
+        "label": "Recinto / Local",
+        "placeholder": "Ex: Coliseu dos Recreios"
+      },
+      "morada": {
+        "label": "Morada",
+        "placeholder": "Rua, número, código postal"
+      },
+      "cidade": {
+        "label": "Cidade",
+        "placeholder": "Ex: Lisboa"
+      },
+      "pais": {
+        "label": "País"
+      },
+      "imagemPrincipal": {
+        "label": "Imagem principal - 1438×959",
+        "mobileHint": "JPG, PNG ou WebP com 1438×959 px. Até 5 MB."
+      },
+      "banner": {
+        "label": "Banner - 1430×340",
+        "mobileHint": "JPG, PNG ou WebP com 1430×340 px. Até 5 MB."
+      },
+      "redesSociais": {
+        "label": "Imagens / vídeos para redes sociais",
+        "mobileHint": "Pode anexar várias imagens ou vídeos. Até 50 MB cada."
+      },
+      "hintDesktop": "Pode enviar até 5 imagens ou vídeos (até 50 MB cada) - selecione vários de uma vez na sua media para juntar mais."
+    },
+    "stepBilhetes": {
+      "heading": "Bilhética",
+      "nomeBilhete": {
+        "label": "Nome do bilhete",
+        "placeholder": "ex.: Geral, VIP, Plateia A"
+      },
+      "lote": {
+        "label": "Lote",
+        "placeholder": "ex.: 1º Lote"
+      },
+      "preco": {
+        "label": "Preço (€)"
+      },
+      "quantidade": {
+        "label": "Quantidade (Lotação)",
+        "placeholder": "ex.: 200"
+      },
+      "removerLoteAria": "Remover lote",
+      "adicionarLote": "Adicionar lote",
+      "removerBilhete": "Remover bilhete",
+      "adicionarTipo": "Adicionar tipo de bilhete",
+      "lotacaoTotal": "Lotação total: ",
+      "bilhetesSuffix": "bilhetes",
+      "restricaoIdade": {
+        "label": "Restrição de idade"
+      },
+      "caracteristicas": "Características do evento",
+      "caracteristicasHint": "(selecione as que se aplicam)",
+      "lotacaoReduzida": {
+        "label": "Lotação mob. reduzida",
+        "placeholder": "ex.: 10"
+      },
+      "observacoes": {
+        "label": "Outras observações",
+        "placeholder": "Detalhes adicionais que devamos saber"
+      }
+    },
+    "stepRevisao": {
+      "heading": "Revisão e Submissão",
+      "promotor": "Promotor",
+      "evento": "Evento",
+      "bilhetica": "Bilhética",
+      "anexos": "Anexos",
+      "responsavel": "Responsável",
+      "nif": "NIF",
+      "email": "Email",
+      "telefone": "Telefone",
+      "nome": "Nome",
+      "categoria": "Categoria",
+      "descricao": "Descrição",
+      "data": "Data",
+      "horaInicio": "Hora de início",
+      "local": "Local",
+      "cidadePais": "Cidade / País",
+      "bilhetes": "Bilhetes",
+      "lotacaoTotal": "Lotação total",
+      "restricaoIdade": "Restrição de idade",
+      "caracteristicas": "Características",
+      "lotacaoReduzida": "Lotação mob. reduzida",
+      "imagemPrincipal": "Imagem principal",
+      "banner": "Banner",
+      "redesSociais": "Redes sociais",
+      "disclaimer": "Declaro que os dados são verdadeiros e aceito os <terms>Termos e Condições</terms> da tickett.com. *",
+      "bilhetesSuffix": "bilhetes"
+    },
+    "stepSucesso": {
+      "title": "EVENTO SUBMETIDO!",
+      "subtitle": "Obrigado. A nossa equipa recebeu o pedido e vai entrar em contacto consigo brevemente, também para receber as imagens do evento. Pode guardar uma cópia da submissão abaixo.",
+      "download": "Baixar comprovante",
+      "close": "Fechar"
+    },
+    "validation": {
+      "nomeResponsavel": "Indique o nome do responsável.",
+      "nif": "Indique o NIF.",
+      "nifFormato": "O NIF deve ter 9 dígitos.",
+      "email": "Indique o email.",
+      "emailFormato": "Indique um email válido.",
+      "telefone": "Indique o telefone.",
+      "nomeEvento": "Indique o nome do evento.",
+      "categoria": "Selecione uma categoria.",
+      "descricao": "Indique uma descrição.",
+      "dataEvento": "Indique a data do evento.",
+      "horaInicio": "Indique a hora de início.",
+      "recinto": "Indique o recinto ou local.",
+      "cidade": "Indique a cidade.",
+      "pais": "Indique o país.",
+      "imagemPrincipal": "Envie a imagem principal.",
+      "banner": "Envie o banner.",
+      "nomeBilhete": "Indique o nome do bilhete.",
+      "precoBilhete": "Indique um preço válido.",
+      "quantidadeBilhete": "Indique uma quantidade válida.",
+      "restricaoIdade": "Selecione a restrição de idade.",
+      "aceitaTermos": "Tem de aceitar os Termos e Condições para submeter o evento."
+    },
+    "options": {
+      "categoria": {
+        "concerto": "Concerto",
+        "festival": "Festival",
+        "teatro": "Teatro",
+        "comedia": "Comédia",
+        "desporto": "Desporto",
+        "conferencia": "Conferência",
+        "workshop": "Workshop",
+        "familia": "Família",
+        "outro": "Outro"
+      },
+      "restricaoIdade": {
+        "todas-idades": "Todas as idades",
+        "m3": "M/3",
+        "m6": "M/6",
+        "m12": "M/12",
+        "m16": "M/16",
+        "m18": "M/18"
+      },
+      "caracteristicas": {
+        "lugares-marcados": "Lugares marcados",
+        "acessos-especiais": "Acessos especiais / mobilidade reduzida",
+        "descontos": "Descontos / promoções"
+      }
+    },
+    "receipt": {
+      "header": "TICKETT.COM — COMPROVATIVO DE SUBMISSÃO",
+      "generatedAt": "Gerado em: {date}",
+      "promotor": "PROMOTOR",
+      "responsavel": "Responsável",
+      "entidade": "Entidade",
+      "nif": "NIF",
+      "email": "Email",
+      "telefone": "Telefone",
+      "website": "Website",
+      "evento": "EVENTO",
+      "nome": "Nome",
+      "categoria": "Categoria",
+      "descricao": "Descrição",
+      "data": "Data",
+      "aberturaPortas": "Abertura de portas",
+      "horaInicio": "Hora de início",
+      "fimVendas": "Fim das vendas",
+      "local": "Local",
+      "morada": "Morada",
+      "cidadePais": "Cidade / País",
+      "bilhetica": "BILHÉTICA",
+      "loteUnico": "Lote único",
+      "lotacaoTotal": "Lotação total",
+      "bilhetesSuffix": "bilhetes",
+      "restricaoIdade": "Restrição de idade",
+      "caracteristicas": "Características",
+      "observacoes": "Observações",
+      "footer": "Obrigado por submeter o seu evento na tickett.com.\nA nossa equipa entrará em contacto brevemente."
+    }
+  },
+  "form": {
+    "fields": {
+      "optional": "(opcional)",
+      "selectPlaceholder": "- Selecionar -",
+      "noFileSelected": "Nenhum ficheiro selecionado",
+      "filesSelected": "{count} ficheiros selecionados",
+      "chooseFile": "Escolher ficheiro",
+      "checkingImage": "A verificar imagem...",
+      "phonePlaceholder": "O seu número de telemóvel",
+      "dialAria": "Indicativo do país",
+      "escolherData": "Escolher data",
+      "fileTooLargeOne": "O ficheiro {names} excede o limite de {max} MB.",
+      "fileTooLargeMany": "Os ficheiros {names} excedem o limite de {max} MB.",
+      "dimensionMismatchOne": "A imagem \"{name}\" tem {width}×{height} px — são necessários {reqWidth}×{reqHeight} px.",
+      "dimensionMismatchMany": "{count} imagens não têm as dimensões exigidas ({reqWidth}×{reqHeight} px)."
+    },
+    "countries": {
+      "Portugal": "Portugal",
+      "Espanha": "Espanha",
+      "França": "França",
+      "Reino Unido": "Reino Unido",
+      "Brasil": "Brasil",
+      "Angola": "Angola",
+      "Moçambique": "Moçambique",
+      "Cabo Verde": "Cabo Verde",
+      "Suíça": "Suíça",
+      "Luxemburgo": "Luxemburgo",
+      "Alemanha": "Alemanha",
+      "Bélgica": "Bélgica",
+      "Países Baixos": "Países Baixos",
+      "Itália": "Itália",
+      "Irlanda": "Irlanda",
+      "Estados Unidos": "Estados Unidos",
+      "Polónia": "Polónia",
+      "Roménia": "Roménia",
+      "Andorra": "Andorra",
+      "Suécia": "Suécia",
+      "Noruega": "Noruega",
+      "Dinamarca": "Dinamarca",
+      "Finlândia": "Finlândia",
+      "Islândia": "Islândia",
+      "Estónia": "Estónia",
+      "Outro": "Outro"
+    },
+    "submitting": "A submeter..."
+  },
+  "reenviarBilhete": {
+    "title": "Reenviar bilhete",
+    "description": "Solicite o reenvio do seu bilhete por email.",
+    "topBar": {
+      "close": "Fechar"
+    },
+    "form": {
+      "heading": "Reenviar bilhete",
+      "email": {
+        "label": "Email",
+        "placeholder": "tiago@exemplo.pt"
+      },
+      "telefone": {
+        "label": "Telefone"
+      },
+      "evento": {
+        "label": "Evento",
+        "placeholder": "Selecione o evento",
+        "loading": "A procurar os seus eventos…",
+        "notFound": "Email sem compras associadas",
+        "error": "Não foi possível carregar os eventos",
+        "empty": "Nenhum evento encontrado para este email",
+        "hint": "Indique o email e o telefone usados na compra para vermos os seus eventos."
+      },
+      "submit": "Reenviar",
+      "alertGeneric": "Existem campos obrigatórios por preencher ou com dados inválidos. Verifique os campos assinalados.",
+      "submitError": "Não foi possível enviar o pedido. Tente novamente.",
+      "recaptchaRequired": "Confirme que não é um robô.",
+      "errors": {
+        "phoneMismatch": "Não encontrámos nenhuma compra com este email e este telefone. Confirme o indicativo e o número que usou na compra.",
+        "noPurchase": "Não encontrámos nenhuma compra paga com este email para o evento escolhido.",
+        "sendFailed": "Não conseguimos confirmar o reenvio. Verifique o seu email dentro de alguns minutos e, se o bilhete não chegar, tente novamente."
+      },
+      "recaptchaNotice": "Este formulário é protegido pelo reCAPTCHA da Google, a que se aplicam a <privacy>Política de Privacidade</privacy> e os <terms>Termos de Utilização</terms> da Google. Os dados indicados servem apenas para reenviar o bilhete."
+    },
+    "validation": {
+      "email": "Indique o email.",
+      "emailFormato": "Indique um email válido.",
+      "telefone": "Indique o telefone.",
+      "telefoneFormato": "Indique um telefone válido.",
+      "evento": "Selecione o evento."
+    },
+    "success": {
+      "title": "BILHETE REENVIADO!",
+      "subtitle": "O bilhete foi reenviado com sucesso para o e-mail usado na compra. Verifique a sua caixa de entrada e spam.",
+      "close": "Fechar"
+    }
+  },
+  "eventoDetalhe": {
+    "imagePlaceholder": "Imagem ainda não cadastrada",
+    "doorsLabel": "Portas {time}",
+    "about": "SOBRE O EVENTO",
+    "readMore": "Ver mais",
+    "readLess": "Ver menos",
+    "local": "LOCAL",
+    "howToGetThere": "Como chegar",
+    "parentalRating": "CLASSIFICAÇÃO ETÁRIA",
+    "promoter": "PROMOTOR",
+    "videoTitle": "Vídeo do evento",
+    "selectTickets": "Selecionar bilhetes",
+    "salesClosed": "Vendas online encerradas",
+    "salesClosedHint": "Pode haver bilhetes na bilheteira do local",
+    "priceFrom": "A partir de",
+    "share": {
+      "share": "PARTILHAR",
+      "linkCopied": "LINK COPIADO",
+      "emailBody": "Link para o evento: {url}"
+    },
+    "videoPlay": "Ver vídeo",
+    "videoNotice": "O vídeo é carregado a partir do YouTube (Google) quando carrega em reproduzir."
+  },
+  "seo": {
+    "home": "Início",
+    "eventosTitle": "Eventos e bilhetes",
+    "eventosDescription": "Descubra os próximos concertos, festas, espetáculos e conferências e compre bilhetes online na Tickett.com.",
+    "categoryTitle": "{category}: eventos e bilhetes",
+    "categoryDescription": "Próximos eventos de {category} com bilhetes à venda na Tickett.com.",
+    "searchTitle": "Pesquisa: {query}",
+    "eventDescription": "Bilhetes para {title}, {date}, em {venue}. Compra segura na Tickett.com.",
+    "ogTagline": "Bilhetes para os melhores eventos",
+    "ogSubtitle": "Concertos, festas, teatro e conferências. Compra segura e bilhete no email."
+  },
+  "consent": {
+    "title": "Cookies",
+    "description": "Usamos cookies essenciais para o site funcionar. Com o seu consentimento, o checkout usa também o Meta Pixel (medição de anúncios) e o Google Tradutor.",
+    "policy": "Política de cookies",
+    "accept": "Aceitar",
+    "reject": "Recusar",
+    "settings": "Definições de cookies"
+  },
+  "motion": {
+    "pause": {
+      "slides": "Pausar destaques",
+      "video": "Pausar vídeo",
+      "animations": "Pausar animações"
+    },
+    "play": {
+      "slides": "Retomar destaques",
+      "video": "Reproduzir vídeo",
+      "animations": "Retomar animações"
+    }
+  }
+}

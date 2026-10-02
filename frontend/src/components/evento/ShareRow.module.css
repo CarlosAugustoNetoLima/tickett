@@ -1,0 +1,48 @@
+.share {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  align-items: flex-start;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.labelIcon {
+  flex-shrink: 0;
+  color: var(--color-accent-primary);
+}
+
+.labelText {
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-default);
+  background-color: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border-card);
+  color: var(--color-accent-primary);
+  cursor: pointer;
+  transition: color var(--transition-default), border-color var(--transition-default);
+}
+
+.iconButton:hover {
+  color: var(--color-accent-hover);
+  border-color: var(--color-border-strong);
+}

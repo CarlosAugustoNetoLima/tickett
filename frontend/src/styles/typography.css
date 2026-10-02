@@ -1,0 +1,148 @@
+.display-hero {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 1;
+  letter-spacing: -5%;
+}
+
+.display-hero-sm {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 1;
+  letter-spacing: -5%;
+}
+
+.heading-h1 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 96px;
+  line-height: normal;
+}
+
+.heading-h2 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: normal;
+}
+
+.heading-h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.heading-h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: normal;
+}
+
+.heading-h5 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: normal;
+}
+
+.heading-h6 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: normal;
+}
+
+.body-lg-bold {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.body-md-bold {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.body-md-medium {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.body-md-regular {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.body-sm-bold {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.body-sm-medium {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.body-sm-regular {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.caption-md-bold {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.caption-md-medium {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.caption-md-regular {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.caption-sm-medium {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: normal;
+}
+
+.caption-sm-regular {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: normal;
+}
+
+.caption-xs {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: normal;
+}

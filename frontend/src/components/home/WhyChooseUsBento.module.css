@@ -1,0 +1,196 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "img1 img1 s1   s1   s1   s1"
+    "img1 img1 s2   s2   s2   s2"
+    "s3   s3   s3   s3   img2 img2"
+    "s4   s4   s4   s4   img2 img2"
+    "img3 img3 s5   s5   s5   s5"
+    "img3 img3 s6   s6   s6   s6"
+    "s7   s7   s7   s8   s8   s8";
+  grid-auto-rows: minmax(280px, auto);
+  gap: var(--space-16);
+  width: 1280px;
+  max-width: 100%;
+  margin: var(--space-40) auto 0;
+}
+
+.area-img1 {
+  grid-area: img1;
+}
+.area-img2 {
+  grid-area: img2;
+}
+.area-img3 {
+  grid-area: img3;
+}
+.area-s1 {
+  grid-area: s1;
+}
+.area-s2 {
+  grid-area: s2;
+}
+.area-s3 {
+  grid-area: s3;
+}
+.area-s4 {
+  grid-area: s4;
+}
+.area-s5 {
+  grid-area: s5;
+}
+.area-s6 {
+  grid-area: s6;
+}
+.area-s7 {
+  grid-area: s7;
+}
+.area-s8 {
+  grid-area: s8;
+}
+
+.tile {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  min-width: 0;
+  padding: var(--space-20);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-bg-tertiary);
+  transition:
+    transform var(--transition-slow) cubic-bezier(0.22, 1, 0.36, 1),
+    border-color var(--transition-slow),
+    box-shadow var(--transition-slow);
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-elevated);
+}
+
+.tileImage {
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.tileService {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-24);
+}
+
+.serviceBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  flex: 1;
+  min-width: 0;
+}
+
+.spotlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle 240px at var(--mx, 50%) var(--my, 50%), var(--color-accent-20), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition-default);
+  pointer-events: none;
+}
+
+.tile:hover .spotlight {
+  opacity: 1;
+}
+
+.visual {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visualImage {
+  width: 100%;
+  height: 420px;
+}
+
+.visualService {
+  width: 224px;
+  height: 200px;
+}
+
+.divider {
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border-default);
+}
+
+.copy {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+.tileTitle {
+  color: var(--color-accent-primary);
+}
+
+.tileDesc {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+    grid-auto-rows: auto;
+  }
+
+  .area-img1,
+  .area-img2,
+  .area-img3,
+  .area-s1,
+  .area-s2,
+  .area-s3,
+  .area-s4,
+  .area-s5,
+  .area-s6,
+  .area-s7,
+  .area-s8 {
+    grid-area: auto;
+  }
+
+  .visualImage {
+    height: 380px;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    gap: var(--space-12);
+    margin-top: var(--space-24);
+  }
+
+  .tileService {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-16);
+  }
+
+  .visualService {
+    width: 100%;
+    height: 170px;
+  }
+
+  .visualImage {
+    height: 320px;
+  }
+}

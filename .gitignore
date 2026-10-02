@@ -1,0 +1,16 @@
+cacheViews/*
+cacheStatic/*
+cacheDB/*
+public/tickets/*
+public/img/shows/*
+tiktx-site.sublime-workspace
+tiktx-site.sublime-project
+public/files_verify/
+frontend/node_modules
+frontend/.env
+frontend/.next
+__MACOSX
+.claude
+frontend/.claude
+frontend/__MACOSX
+.DS_Store

@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--space-40) var(--content-padding-desktop);
+  background-color: var(--color-bg-secondary);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-8);
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.kicker {
+  color: var(--color-accent-primary);
+}
+
+.title {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: var(--space-40) var(--content-padding-mobile);
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}

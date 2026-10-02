@@ -1,0 +1,494 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.stickySpacer {
+  height: 84px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-bg-elevated);
+  flex-shrink: 0;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  mask-image: linear-gradient(180deg, black 0%, black 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, black 0%, black 65%, transparent 100%);
+}
+
+.heroPlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  width: 100%;
+  height: 340px;
+  background: linear-gradient(135deg, var(--color-bg-elevated) 0%, var(--color-bg-secondary) 100%);
+  mask-image: linear-gradient(180deg, black 0%, black 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, black 0%, black 65%, transparent 100%);
+}
+
+.heroPlaceholderText {
+  color: var(--color-text-secondary);
+}
+
+.heroPlaceholderIcon {
+  color: var(--color-text-muted);
+  opacity: 0.4;
+}
+
+.heroGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-bg-secondary) 0%, transparent) 0%,
+    color-mix(in srgb, var(--color-bg-secondary) 32.5%, transparent) 40%,
+    color-mix(in srgb, var(--color-bg-secondary) 48.5%, transparent) 80%,
+    color-mix(in srgb, var(--color-bg-secondary) 50%, transparent) 100%
+  );
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  width: 100%;
+  padding: var(--space-32) var(--content-padding-desktop);
+}
+
+.eyebrow {
+  color: var(--color-accent-primary);
+}
+
+.title {
+  max-width: 900px;
+  font-family: var(--font-body);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-text-primary);
+}
+
+.pillsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-16);
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-10) 14px;
+  border-radius: var(--radius-default);
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-bg-hover);
+  white-space: nowrap;
+}
+
+.pillIcon {
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+}
+
+.pillText {
+  color: var(--color-text-secondary);
+}
+
+.body {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-48);
+  width: 100%;
+  padding: var(--space-32) var(--content-padding-desktop) var(--space-48);
+}
+
+.aside {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.fieldLabel {
+  color: var(--color-text-secondary);
+}
+
+.fieldValue {
+  color: var(--color-text-secondary);
+}
+
+.description {
+  color: var(--color-text-secondary);
+  overflow-wrap: anywhere;
+}
+
+.description :global(p) {
+  margin: 0 0 var(--space-16) 0;
+}
+
+.description :global(p:last-child) {
+  margin-bottom: 0;
+}
+
+.description :global(ul),
+.description :global(ol) {
+  margin: 0 0 var(--space-16) 0;
+  padding-left: var(--space-20);
+}
+
+.description :global(ul) {
+  list-style: disc;
+}
+
+.description :global(ol) {
+  list-style: decimal;
+}
+
+.description :global(ul:last-child),
+.description :global(ol:last-child) {
+  margin-bottom: 0;
+}
+
+.description :global(a) {
+  color: var(--color-accent-primary);
+  text-decoration: underline;
+}
+
+.description :global(a:hover) {
+  color: var(--color-accent-hover);
+}
+
+.descriptionBox {
+  position: relative;
+}
+
+.descriptionClamped {
+  overflow: hidden;
+}
+
+.descriptionFade {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: var(--space-48);
+  background: linear-gradient(180deg, transparent 0%, var(--color-bg-secondary) 100%);
+  pointer-events: none;
+}
+
+.readMoreButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+  color: var(--color-accent-primary);
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  transition: color var(--transition-default);
+}
+
+.readMoreButton:hover {
+  color: var(--color-accent-hover);
+}
+
+.readMoreIcon {
+  flex-shrink: 0;
+  transform: rotate(90deg);
+  transition: transform var(--transition-default);
+}
+
+.readMoreIconExpanded {
+  transform: rotate(-90deg);
+}
+
+.venueName {
+  color: var(--color-text-primary);
+}
+
+.venueAddress {
+  color: var(--color-text-secondary);
+}
+
+.mapsLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.mapsLink:hover {
+  color: var(--color-text-primary);
+}
+
+.mapsLinkText {
+  white-space: nowrap;
+}
+
+.mapsLinkIcon {
+  flex-shrink: 0;
+  color: var(--color-accent-primary);
+}
+
+.videoBox {
+  display: flex;
+  width: 100%;
+  border-radius: var(--radius-xl);
+  background-color: var(--color-bg-tertiary);
+  overflow: hidden;
+}
+
+.videoFrame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.videoPoster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-12);
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  padding: var(--space-24);
+  text-align: center;
+}
+
+.videoPlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-on-accent);
+  transition: transform var(--transition-default);
+}
+
+.videoPoster:hover .videoPlay {
+  transform: scale(1.08);
+}
+
+.videoLabel {
+  color: var(--color-text-primary);
+}
+
+.videoNotice {
+  max-width: 360px;
+  color: var(--color-text-secondary);
+}
+
+.sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-16) var(--space-20);
+  width: 100%;
+  padding: var(--space-16) var(--content-padding-desktop);
+  background-color: var(--color-overlay);
+  backdrop-filter: blur(25px);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.sticky::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  height: var(--space-48);
+  background: linear-gradient(180deg, transparent 0%, var(--color-bg-secondary) 100%);
+  pointer-events: none;
+}
+
+.stickyInfo {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.stickyTitle {
+  overflow: hidden;
+  color: var(--color-text-primary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stickyMeta {
+  overflow: hidden;
+  color: var(--color-text-secondary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stickyPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stickyPriceLabel {
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.stickyPriceValue {
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.stickyButton {
+  flex-shrink: 0;
+  min-width: 200px;
+}
+
+/* No lugar do botão quando a venda online já fechou: o checkout só diria "Vendas
+   encerradas" depois do clique. Mesma altura do botão, para a barra não mudar. */
+.salesClosed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 200px;
+  min-height: 50px;
+  padding: var(--space-4) var(--space-16);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-default);
+  text-align: center;
+}
+
+.salesClosedTitle {
+  color: var(--color-text-primary);
+}
+
+.salesClosedHint {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 767px) {
+  .stickySpacer {
+    height: 132px;
+  }
+
+  .hero {
+    height: 340px;
+  }
+
+  .heroImage,
+  .heroPlaceholder {
+    height: 240px;
+    mask-image: linear-gradient(180deg, black 0%, black 55%, transparent 100%);
+    -webkit-mask-image: linear-gradient(180deg, black 0%, black 55%, transparent 100%);
+  }
+
+  .heroContent {
+    padding: var(--space-16) var(--content-padding-mobile) var(--space-32);
+  }
+
+  .title {
+    max-width: none;
+    font-size: 28px;
+  }
+
+  .body {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-32);
+    padding: var(--space-32) var(--content-padding-mobile);
+  }
+
+  .aside {
+    display: contents;
+  }
+
+  .pillsList {
+    order: 1;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-8);
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .meta {
+    order: 3;
+  }
+
+  .sticky {
+    padding: var(--space-16);
+  }
+
+  .stickyButton,
+  .salesClosed {
+    flex: 1 0 100%;
+    width: 100%;
+    min-width: 0;
+  }
+}

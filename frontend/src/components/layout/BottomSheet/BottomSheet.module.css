@@ -1,0 +1,110 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgba(7, 7, 15, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-default), visibility var(--transition-default);
+}
+
+.overlayOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sheet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+  width: 100%;
+  max-width: 640px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: var(--space-16);
+  border: 1px solid var(--color-border-card);
+  border-top-left-radius: var(--radius-default);
+  border-top-right-radius: var(--radius-default);
+  background-color: var(--color-bg-tertiary);
+  box-shadow: 0px -16px 20px rgba(29, 29, 38, 0.08);
+  transform: translateY(100%);
+  transition: transform var(--transition-slow);
+}
+
+.sheetOpen {
+  transform: translateY(0);
+}
+
+.dragArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  touch-action: none;
+  cursor: grab;
+}
+
+.handleRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.handle {
+  width: 60px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: var(--color-bg-hover);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: var(--space-16);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+.title {
+  flex: 1 0 0;
+  min-width: 0;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.headerSpacer {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-bg-elevated);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: stretch;
+  width: 100%;
+  overflow-y: auto;
+}

@@ -1,0 +1,34 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  width: 100%;
+  padding: var(--space-10) var(--space-12);
+  border-radius: var(--radius-md);
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--transition-default), color var(--transition-default);
+}
+
+.item:hover:not(.selected) {
+  background-color: var(--color-bg-hover);
+}
+
+.label {
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.selected {
+  background-color: var(--color-accent-10);
+  color: var(--color-accent-primary);
+}

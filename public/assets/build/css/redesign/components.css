@@ -1,0 +1,1166 @@
+/*
+ * Tickett.com redesign — componentes base
+ * Ver public/assets/build/css/redesign/tokens.css para os tokens usados aqui.
+ */
+
+/* ---------- Base de página ---------- */
+
+body.tkt-page {
+	background-color: var(--tkt-bg-base) !important;
+	background-image: none !important;
+}
+
+body.tkt-page main {
+	background-color: var(--tkt-bg-base) !important;
+	background-image: none !important;
+	padding-top: 0 !important;
+	color: var(--tkt-text-primary) !important;
+}
+
+/* ---------- Quarentena contra o CSS legado ----------
+   O CSS antigo (main.css compilado + o <style> gigante embutido em
+   app/views/index.volt) usa seletores genéricos como `.swiper-slide img`,
+   `.card`, `main` etc, alguns com !important, que vazam para dentro dos
+   componentes novos porque reaproveitamos o mesmo swiper.js. Zeramos aqui,
+   com a mesma especificidade/!important, tudo que essas regras antigas
+   tocam dentro do escopo do redesign. */
+
+.tkt-scope.swiper-slide img:not(.tkt-hero__image):not(.tkt-card-destaque__media img):not(.tkt-card-min__media img),
+.tkt-scope .swiper-slide img:not(.tkt-hero__image):not(.tkt-card-destaque__media img):not(.tkt-card-min__media img) {
+	height: auto !important;
+	width: auto !important;
+	border-radius: 0 !important;
+	max-width: none !important;
+}
+
+.tkt-scope .card,
+.tkt-scope .card-events {
+	border: none !important;
+	background: none !important;
+	border-radius: 0 !important;
+}
+
+/* Transições padrão para estados hover (cor, fundo, borda) em todo o redesign */
+.tkt-scope a,
+.tkt-scope button,
+.tkt-scope .tkt-card-destaque,
+.tkt-scope .tkt-card-min {
+	transition: color .15s ease, background-color .15s ease, border-color .15s ease, opacity .15s ease, transform .15s ease;
+}
+
+.tkt-container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+@media (max-width: 900px) {
+	.tkt-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* ---------- Navbar ---------- */
+
+.tkt-navbar {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: rgba(21, 21, 24, 0.9);
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	border-bottom: 1px solid var(--tkt-border-subtle);
+}
+
+.tkt-navbar__inner {
+	display: flex;
+	align-items: center;
+	gap: 48px;
+	min-height: 68px;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 80px;
+	box-sizing: border-box;
+}
+
+.tkt-navbar__logo {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.tkt-navbar__logo img {
+	height: 28px;
+	width: auto;
+	display: block;
+}
+
+.tkt-navbar__search {
+	flex: 1 0 0;
+	min-width: 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	height: 40px;
+	padding: 0 16px;
+	background: rgba(0, 0, 0, 0.4);
+	border: 1px solid var(--tkt-border-subtle);
+	border-radius: var(--tkt-radius-sm);
+}
+
+.tkt-navbar__search svg {
+	opacity: .5;
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+}
+
+.tkt-navbar__search input {
+	flex: 1 0 0;
+	min-width: 0;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--tkt-text-primary) !important;
+	font-size: 14px !important;
+}
+
+.tkt-navbar__search input::placeholder {
+	color: var(--tkt-text-muted) !important;
+}
+
+.tkt-navbar__links {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	flex-shrink: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tkt-navbar__links a,
+.tkt-navbar__links button {
+	background: none;
+	border: none;
+	padding: 0;
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	color: var(--tkt-text-secondary) !important;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap !important;
+}
+
+.tkt-navbar__links a:hover,
+.tkt-navbar__links button:hover {
+	color: var(--tkt-text-primary) !important;
+}
+
+.tkt-navbar__lang {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 7px 10px;
+	border: 1px solid var(--tkt-bg-lighter);
+	border-radius: var(--tkt-radius-sm);
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	color: var(--tkt-text-secondary) !important;
+	background: none;
+	cursor: pointer;
+}
+
+.tkt-navbar__burger {
+	display: none;
+	background: none;
+	border: none;
+	color: var(--tkt-text-primary) !important;
+	padding: 8px;
+	cursor: pointer;
+}
+
+@media (max-width: 900px) {
+	.tkt-navbar__inner {
+		padding: 12px 20px;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	.tkt-navbar__links {
+		display: none;
+	}
+
+	.tkt-navbar__burger {
+		display: block;
+	}
+
+	.tkt-navbar__search {
+		order: 3;
+		flex-basis: 100%;
+	}
+}
+
+/* ---------- Botões ---------- */
+
+.tkt-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	height: 50px;
+	padding: 8px 24px;
+	border-radius: var(--tkt-radius-sm);
+	border: none;
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap !important;
+	transition: background .15s ease, transform .15s ease;
+}
+
+.tkt-btn--sm {
+	height: 40px;
+	padding: 8px 16px;
+}
+
+.tkt-btn--primary {
+	background: var(--tkt-accent-primary);
+	color: var(--tkt-text-dark) !important;
+}
+
+.tkt-btn--primary:hover {
+	background: var(--tkt-accent-hover);
+	color: var(--tkt-text-dark) !important;
+}
+
+.tkt-btn--secondary {
+	background: var(--tkt-bg-elevated);
+	color: var(--tkt-text-secondary) !important;
+	border: 1px solid var(--tkt-border-default);
+}
+
+.tkt-btn--secondary:hover {
+	color: var(--tkt-text-primary) !important;
+	border-color: var(--tkt-text-secondary);
+}
+
+/* ---------- Dropdowns (Bootstrap) dentro do redesign ---------- */
+
+.tkt-scope .dropdown-menu {
+	background: var(--tkt-bg-elevated);
+	border: 1px solid var(--tkt-border-default);
+	border-radius: var(--tkt-radius-sm);
+	padding: 6px;
+	min-width: 200px;
+}
+
+.tkt-scope .dropdown-menu .dropdown-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 10px;
+	border-radius: 6px;
+	color: var(--tkt-text-secondary) !important;
+	font-size: 13px !important;
+}
+
+.tkt-scope .dropdown-menu .dropdown-item:hover {
+	background: var(--tkt-bg-lighter);
+	color: var(--tkt-text-primary) !important;
+}
+
+/* ---------- Section header ---------- */
+
+.tkt-section {
+	padding: var(--tkt-space-8) 0;
+}
+
+.tkt-section__eyebrow {
+	display: block;
+	font-size: 12px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-accent-primary) !important;
+	margin-bottom: var(--tkt-space-2);
+}
+
+.tkt-section__head {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: var(--tkt-space-5);
+	gap: 10px;
+}
+
+.tkt-section__title {
+	font-size: 36px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-text-primary) !important;
+	margin: 0;
+	line-height: 1.15 !important;
+}
+
+.tkt-section__nav {
+	display: flex;
+	gap: 8px;
+	flex-shrink: 0;
+}
+
+.tkt-section__nav button {
+	width: 36px;
+	height: 36px;
+	padding: 10px;
+	border-radius: 8px;
+	border: none;
+	background: var(--tkt-bg-elevated);
+	color: var(--tkt-text-primary) !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.tkt-section__nav button svg {
+	width: 16px;
+	height: 16px;
+}
+
+.tkt-section__nav button:hover {
+	background: var(--tkt-bg-lighter);
+}
+
+.tkt-section__nav .swiper-button-disabled {
+	opacity: .35;
+}
+
+/* ---------- Hero (evento premium) — Figma node 5156:3680, 1440x438 ---------- */
+
+.tkt-hero {
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.tkt-hero .swiper-slide {
+	height: auto;
+}
+
+.tkt-hero .tkt-hero__image {
+	display: block !important;
+	width: 100% !important;
+	height: auto !important;
+	aspect-ratio: 1440 / 340;
+	object-fit: cover !important;
+}
+
+.tkt-hero__bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	background: var(--tkt-bg-surface);
+	padding: 24px 80px;
+}
+
+.tkt-hero__left {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	flex-shrink: 0;
+}
+
+.tkt-hero__price {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+}
+
+.tkt-hero__price-label {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-muted) !important;
+}
+
+.tkt-hero__price-value {
+	font-size: 22px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-text-primary) !important;
+}
+
+.tkt-hero__meta {
+	display: flex;
+	flex: 1 0 0;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+	min-width: 0;
+}
+
+.tkt-hero__meta-item {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-secondary) !important;
+	white-space: nowrap !important;
+}
+
+.tkt-hero__meta-item svg {
+	width: 14px;
+	height: 14px;
+	flex-shrink: 0;
+}
+
+.tkt-hero__meta-sep {
+	color: #4a4a56 !important;
+	font-size: 14px !important;
+}
+
+.tkt-hero__nav {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex-shrink: 0;
+}
+
+.tkt-hero__nav button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 10px;
+	background: var(--tkt-bg-elevated);
+	border: none;
+	border-radius: var(--tkt-radius-sm);
+	color: var(--tkt-text-primary) !important;
+	cursor: pointer;
+}
+
+.tkt-hero__nav button:hover {
+	background: var(--tkt-bg-lighter);
+}
+
+.tkt-hero__nav svg {
+	width: 16px;
+	height: 16px;
+}
+
+/* Neutraliza o CSS padrão do Swiper (posição absoluta, ::after com seta) para
+   os botões prev/next do Hero, que aqui vivem dentro do fluxo normal. */
+.tkt-hero__nav .swiper-button-next,
+.tkt-hero__nav .swiper-button-prev {
+	position: static !important;
+	margin: 0 !important;
+	top: auto !important;
+	left: auto !important;
+	right: auto !important;
+}
+
+.tkt-hero__nav .swiper-button-next:after,
+.tkt-hero__nav .swiper-button-prev:after {
+	content: none !important;
+}
+
+.tkt-hero__nav .swiper-button-disabled {
+	opacity: .35;
+}
+
+@media (max-width: 900px) {
+	.tkt-hero__bar {
+		flex-wrap: wrap;
+		padding: 16px 20px;
+	}
+
+	.tkt-hero__meta {
+		order: 3;
+		flex-basis: 100%;
+		justify-content: flex-start;
+	}
+}
+
+/* ---------- Card destaque (Figma node 5083:5899, 300px) ---------- */
+
+.tkt-card-destaque {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	border: 1px solid var(--tkt-border-subtle);
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: -4px 4px 50px 0 var(--tkt-bg-base);
+	text-decoration: none;
+	color: var(--tkt-text-primary) !important;
+}
+
+.tkt-card-destaque__media {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	background: var(--tkt-bg-elevated);
+}
+
+.tkt-scope .tkt-card-destaque__media img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important;
+	display: block !important;
+}
+
+.tkt-card-destaque__body {
+	width: 100%;
+	background: var(--tkt-bg-surface);
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.tkt-card-destaque__title {
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-text-primary) !important;
+	margin: 0;
+	white-space: nowrap !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tkt-card-destaque__subtitle {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-secondary) !important;
+	margin: 0;
+	white-space: nowrap !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tkt-card-destaque__pr {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.tkt-card-destaque__date {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-muted) !important;
+}
+
+.tkt-card-destaque__price {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.tkt-card-destaque__price-label {
+	font-size: 10px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-muted) !important;
+}
+
+.tkt-card-destaque__price-value {
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-accent-primary) !important;
+}
+
+/* ---------- Card destaque min (Figma node 4926:29014, 410.667px) ---------- */
+
+.tkt-card-min {
+	display: flex;
+	align-items: center;
+	width: 410.667px;
+	border: 1px solid var(--tkt-border-subtle);
+	border-radius: 16px;
+	overflow: hidden;
+	text-decoration: none;
+	color: var(--tkt-text-primary) !important;
+}
+
+.tkt-card-min__media {
+	width: 120px;
+	height: 80px;
+	flex-shrink: 0;
+	background: var(--tkt-bg-elevated);
+}
+
+.tkt-scope .tkt-card-min__media img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important;
+	display: block !important;
+}
+
+.tkt-card-min__body {
+	flex: 1 0 0;
+	min-width: 0;
+	background: var(--tkt-bg-surface);
+	padding: 8px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	justify-content: center;
+}
+
+.tkt-card-min__title {
+	font-size: 16px !important;
+	font-weight: 500 !important;
+	color: var(--tkt-text-primary) !important;
+	margin: 0;
+	white-space: nowrap !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tkt-card-min__meta {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-secondary) !important;
+	margin: 0;
+	white-space: nowrap !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ---------- Swiper overrides (mantém o swiper.js existente) ---------- */
+
+.tkt-swiper {
+	overflow: visible;
+	padding-bottom: 4px;
+}
+
+.tkt-swiper .swiper-button-next,
+.tkt-swiper .swiper-button-prev {
+	display: none;
+}
+
+.tkt-swiper .swiper-slide {
+	height: auto;
+}
+
+/* Carrossel de cards com setas circulares (usa a navigation já configurada
+   em app/views/index.volt para .mySwiper_1 / .mySwiper_2) */
+
+.tkt-cards-swiper {
+	overflow: hidden;
+	padding: 4px 4px 8px;
+}
+
+.tkt-cards-swiper .swiper-slide {
+	height: auto;
+}
+
+.tkt-cards-swiper .swiper-button-next,
+.tkt-cards-swiper .swiper-button-prev {
+	width: 36px;
+	height: 36px;
+	margin-top: -18px;
+	border-radius: 50%;
+	background: var(--tkt-bg-elevated);
+	border: 1px solid var(--tkt-border-default);
+}
+
+.tkt-cards-swiper .swiper-button-next:after,
+.tkt-cards-swiper .swiper-button-prev:after {
+	font-size: 14px !important;
+	color: var(--tkt-text-primary) !important;
+}
+
+.tkt-cards-swiper .swiper-button-next:hover,
+.tkt-cards-swiper .swiper-button-prev:hover {
+	border-color: var(--tkt-accent-primary);
+}
+
+.tkt-cards-swiper .swiper-button-next.swiper-button-disabled,
+.tkt-cards-swiper .swiper-button-prev.swiper-button-disabled {
+	opacity: .35;
+}
+
+/* ---------- Banner (Figma node 5006:1670 / 5006:2765, reaproveitado para
+   "+500 eventos" e para o CTA de alertas WhatsApp) ---------- */
+
+.tkt-banner {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	background: var(--tkt-bg-surface);
+	border: 1px solid var(--tkt-border-subtle);
+	border-radius: 20px;
+	padding: 24px;
+	width: 100%;
+}
+
+.tkt-banner__left {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	flex: 1 0 0;
+	min-width: 0;
+}
+
+.tkt-banner__chip {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 56px;
+	height: 56px;
+	padding: 14px;
+	background: var(--tkt-bg-surface);
+	border: 1px solid var(--tkt-border-subtle);
+	border-radius: 16px;
+}
+
+.tkt-banner__chip svg {
+	width: 28px;
+	height: 28px;
+	color: var(--tkt-text-primary) !important;
+}
+
+.tkt-banner__text {
+	flex: 1 0 0;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.tkt-banner__title {
+	font-size: 28px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-text-primary) !important;
+	margin: 0;
+}
+
+.tkt-banner__title strong {
+	color: var(--tkt-accent-primary) !important;
+	font-weight: 700 !important;
+}
+
+.tkt-banner__desc {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-secondary) !important;
+	margin: 0;
+}
+
+.tkt-banner__right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 10px;
+	flex-shrink: 0;
+}
+
+.tkt-banner__input-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.tkt-banner__field {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 340px;
+	height: 50px;
+	padding: 0 16px;
+	background: var(--tkt-bg-base);
+	border: 1px solid var(--tkt-border-default);
+	border-radius: 8px;
+}
+
+.tkt-banner__field select {
+	background: transparent;
+	border: none;
+	color: var(--tkt-text-primary) !important;
+	font-size: 14px !important;
+	font-weight: 500 !important;
+}
+
+.tkt-banner__field input {
+	flex: 1 0 0;
+	min-width: 0;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--tkt-text-primary) !important;
+	font-size: 14px !important;
+}
+
+.tkt-banner__field input::placeholder {
+	color: var(--tkt-text-muted) !important;
+}
+
+.tkt-banner__hint {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-muted) !important;
+	text-align: center !important;
+	width: 200px;
+	margin: 0;
+}
+
+@media (max-width: 900px) {
+	.tkt-banner {
+		flex-wrap: wrap;
+	}
+
+	.tkt-banner__right {
+		align-items: stretch;
+		width: 100%;
+	}
+
+	.tkt-banner__input-row {
+		flex-wrap: wrap;
+	}
+
+	.tkt-banner__field {
+		width: 100%;
+	}
+
+	.tkt-banner__hint {
+		width: 100%;
+	}
+}
+
+/* ---------- Benefícios 01/02/03 (Figma "Section/01-03", ContentRow) ---------- */
+
+.tkt-showcase-head {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 40px 0 24px;
+}
+
+.tkt-benefit-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	min-height: 400px;
+	padding: 24px 0;
+	border-top: 1px solid var(--tkt-border-subtle);
+}
+
+.tkt-benefit-row:first-of-type {
+	border-top: none;
+}
+
+.tkt-benefit-row__text {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 400px;
+	height: 400px;
+	flex-shrink: 0;
+	background: var(--tkt-bg-surface);
+	border: 1px solid var(--tkt-bg-elevated);
+	border-radius: 16px;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.tkt-benefit-row__number {
+	font-size: 96px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-text-primary) !important;
+	margin: 0;
+	line-height: 1 !important;
+}
+
+.tkt-benefit-row__divider {
+	width: 100%;
+	height: 1px;
+	background: var(--tkt-border-default);
+}
+
+.tkt-benefit-row__title {
+	font-size: 22px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-accent-primary) !important;
+	margin: 0 0 8px;
+}
+
+.tkt-benefit-row__desc {
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-secondary) !important;
+	margin: 0;
+}
+
+.tkt-benefit-row__visual {
+	flex: 1 0 0;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--tkt-bg-surface);
+	border: 1px solid var(--tkt-bg-elevated);
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.tkt-benefit-row__visual i {
+	font-size: 80px !important;
+	color: var(--tkt-accent-primary) !important;
+	opacity: .9;
+}
+
+@media (max-width: 1100px) {
+	.tkt-benefit-row {
+		flex-direction: column;
+		min-height: 0;
+	}
+
+	.tkt-benefit-row__text,
+	.tkt-benefit-row__visual {
+		width: 100%;
+		height: auto;
+		min-height: 220px;
+	}
+}
+
+/* ---------- CTA "Venda o seu evento" (Figma "Section/Promotor") ---------- */
+
+.tkt-promo {
+	display: flex;
+	align-items: center;
+	gap: 80px;
+	padding: 40px 0;
+	flex-wrap: wrap;
+}
+
+.tkt-promo__left {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex: 1 0 320px;
+	min-width: 0;
+}
+
+.tkt-promo__eyebrow {
+	font-size: 12px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-accent-primary) !important;
+	margin: 0;
+}
+
+.tkt-promo__title {
+	font-size: 28px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-text-primary) !important;
+	margin: 0;
+}
+
+.tkt-promo__desc {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: var(--tkt-text-secondary) !important;
+	margin: 0;
+}
+
+.tkt-promo__actions {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	align-items: flex-start;
+}
+
+.tkt-promo__more {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	color: var(--tkt-text-secondary) !important;
+	text-decoration: none;
+}
+
+.tkt-promo__more svg {
+	width: 15px;
+	height: 15px;
+}
+
+.tkt-promo__more:hover {
+	color: var(--tkt-text-primary) !important;
+}
+
+.tkt-promo__feats {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	flex-shrink: 0;
+}
+
+.tkt-promo__feat {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	height: 161px;
+	padding: 40px;
+	border: 1px solid var(--tkt-bg-elevated);
+	border-top: none;
+	border-left: none;
+}
+
+.tkt-promo__feat svg {
+	width: 40px;
+	height: 40px;
+	color: var(--tkt-accent-primary) !important;
+	flex-shrink: 0;
+}
+
+.tkt-promo__feat span {
+	font-size: 22px !important;
+	font-weight: 700 !important;
+	color: var(--tkt-text-primary) !important;
+	white-space: nowrap !important;
+}
+
+@media (max-width: 1100px) {
+	.tkt-promo {
+		gap: 32px;
+	}
+
+	.tkt-promo__feats {
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+
+	.tkt-promo__feat {
+		padding: 20px;
+		height: auto;
+	}
+}
+
+/* ---------- Footer ---------- */
+
+.tkt-footer {
+	background: var(--tkt-bg-base);
+	padding: var(--tkt-space-8) 0 var(--tkt-space-5);
+	border-top: 1px solid var(--tkt-border-subtle);
+	margin-top: var(--tkt-space-8);
+}
+
+.tkt-footer__top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: var(--tkt-space-6);
+	flex-wrap: wrap;
+	padding-bottom: var(--tkt-space-6);
+}
+
+.tkt-footer__brand {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	max-width: 280px;
+}
+
+.tkt-footer__brand img {
+	height: 28px;
+	width: auto;
+}
+
+.tkt-footer__brand p {
+	margin: 0;
+	font-size: 12px !important;
+	color: var(--tkt-text-muted) !important;
+}
+
+.tkt-footer__cols {
+	display: flex;
+	gap: var(--tkt-space-7);
+	flex-wrap: wrap;
+}
+
+.tkt-footer__col {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	min-width: 160px;
+}
+
+.tkt-footer__col-title {
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	color: var(--tkt-text-primary) !important;
+	margin: 0 0 2px;
+}
+
+.tkt-footer__col a,
+.tkt-footer__col span {
+	font-size: 12px !important;
+	color: var(--tkt-text-muted) !important;
+	text-decoration: none;
+}
+
+.tkt-footer__col a:hover {
+	color: var(--tkt-text-secondary) !important;
+}
+
+.tkt-footer__newsletter {
+	display: flex;
+	gap: 8px;
+	margin-top: 4px;
+}
+
+.tkt-footer__newsletter input {
+	height: 36px;
+	flex: 1;
+	min-width: 0;
+	background: var(--tkt-bg-elevated);
+	border: 1px solid var(--tkt-border-default);
+	border-radius: var(--tkt-radius-sm);
+	color: var(--tkt-text-primary) !important;
+	padding: 0 10px;
+	font-size: 12px !important;
+}
+
+.tkt-footer__newsletter button {
+	width: 36px;
+	height: 36px;
+	flex-shrink: 0;
+	border-radius: var(--tkt-radius-sm);
+	background: var(--tkt-accent-primary);
+	border: none;
+	color: var(--tkt-text-dark) !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.tkt-footer__newsletter button svg {
+	width: 16px;
+	height: 16px;
+}
+
+.tkt-footer__bottom {
+	border-top: 1px solid var(--tkt-border-subtle);
+	padding-top: var(--tkt-space-4);
+	font-size: 12px !important;
+	color: var(--tkt-text-secondary) !important;
+	opacity: .6;
+}
+
+.tkt-footer__bottom p {
+	margin: 0 0 4px;
+}
+
+@media (max-width: 900px) {
+	.tkt-footer__cols {
+		gap: var(--tkt-space-5);
+	}
+}
