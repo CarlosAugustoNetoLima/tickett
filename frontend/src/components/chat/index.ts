@@ -1,0 +1,1 @@
+export { ChatbaseWidget } from "./ChatbaseWidget";

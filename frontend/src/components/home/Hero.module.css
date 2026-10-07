@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes heroFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes heroProgressRing {
   from {
     stroke-dashoffset: 94.2477;
@@ -19,6 +28,36 @@
 .hero {
   position: relative;
   width: 100%;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.fadeIn {
+  animation: heroFade 500ms ease-out both;
+}
+
+.afterFadeOut {
+  animation-delay: 340ms;
+}
+
+.fadeOut {
+  animation: heroFadeOut 400ms ease-in both;
+  pointer-events: none;
+}
+
+.stacked {
+  position: absolute;
+  inset: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .afterFadeOut {
+    animation-delay: 0s;
+  }
 }
 
 .imageWrap {
@@ -47,10 +86,6 @@
 
 .imagePlaceholderText {
   color: var(--color-text-secondary);
-}
-
-.image {
-  animation: heroFade 450ms ease;
 }
 
 .progressRing {
@@ -101,7 +136,6 @@
   object-fit: cover;
   object-position: bottom;
   filter: blur(35px);
-  animation: heroFade 450ms ease;
 }
 
 .infoBgOverlay {
@@ -133,6 +167,10 @@
   width: 210px;
 }
 
+.priceStack {
+  position: relative;
+}
+
 .priceCol {
   display: flex;
   flex-direction: column;
@@ -147,14 +185,22 @@
   color: var(--color-text-primary);
 }
 
+.metaStack {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
 .meta {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
-  flex: 1;
-  min-width: 0;
 }
+
 
 .metaItem {
   display: flex;
@@ -222,8 +268,13 @@
     flex: 1 1 0;
   }
 
-  .priceCol {
+  .priceStack {
     flex-shrink: 0;
+  }
+
+  .metaStack {
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .meta {

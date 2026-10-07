@@ -4,6 +4,7 @@ import { preload } from "react-dom";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { ChatbaseWidget } from "@/components/chat";
 import { CookieConsent } from "@/components/consent";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import "../../styles/globals.css";
@@ -46,6 +47,7 @@ export default async function LocaleLayout({ children, modal, params }: LayoutPr
           {modal}
           <CookieConsent />
         </NextIntlClientProvider>
+        <ChatbaseWidget />
       </body>
     </html>
   );
