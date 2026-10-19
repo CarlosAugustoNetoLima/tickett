@@ -222,7 +222,8 @@
       "alertGeneric": "Existem campos obrigatórios por preencher ou com dados inválidos. Verifique os campos assinalados.",
       "continuar": "Continuar",
       "confirmar": "Confirmar",
-      "submitError": "Não foi possível enviar o pedido. Tente novamente dentro de alguns minutos."
+      "submitError": "Não foi possível enviar o pedido. Tente novamente dentro de alguns minutos.",
+      "recaptchaRequired": "Confirme que não é um robô."
     },
     "topBar": {
       "back": "Voltar",

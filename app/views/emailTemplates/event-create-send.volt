@@ -1,4 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+{#
+  Marca exibida no e-mail de confirmação enviado ao promotor.
+  Para mudar o branding, edite apenas estas 3 URLs.
+  - brandHeaderBg: imagem de fundo do cabeçalho (banner)
+  - brandLogoHeader: logo branco sobreposto ao banner do cabeçalho
+  - brandLogoFooter: logo do rodapé (fundo claro, usar versão escura/colorida)
+#}
+{% set brandHeaderBg = 'https://tickett.com/brand/email_header_bg.png' %}
+{% set brandLogoHeader = 'https://tickett.com/brand/logo.png' %}
+{% set brandLogoFooter = 'https://tickett.com/brand/logo_dark.png' %}
 <html lang="pt">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -41,7 +51,7 @@
 											<div style="
 												justify-content: space-between;
 												align-items: center;
-												background-image: url('https://lebillet.eu/logos/lebillet_pt/header_clean.png'); 
+												background-image: url('{{ brandHeaderBg }}'); 
 												background-size: cover; 
 												background-position: center; 
 												height: auto;
@@ -53,8 +63,8 @@
 													style="height: 100%;">
 													<tr>
 														<td valign="middle" align="left">
-															<img src="{{ url() }}{{ config.company.logos }}white_new.png"
-																class="logo-esquerda" alt="Logo"
+															<img src="{{ brandLogoHeader }}"
+																class="logo-esquerda" alt="Tickett"
 																style="display: block; height: auto; width: 30%;">
 														</td>
 														<td valign="middle" align="right" style="color: #ffffff;">
@@ -141,8 +151,8 @@
     <tr>
        <td align="center" valign="top"
 								style="color: #000000; padding: 20px; ">
-								<a target="_blank" href="{{ urlSite }}">
-									<img src="{{ url() }}{{ config.company.logos }}logo.png" style="width: 20%;"/>
+								<a target="_blank" href="{{ url() }}">
+									<img src="{{ brandLogoFooter }}" style="width: 20%;"/>
 								</a>
 
 								<p>

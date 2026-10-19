@@ -555,12 +555,24 @@ class IndexController extends ControllerBase
 			}
 		}
  
-		// Email para a equipa lebillet (com anexos)
+		// ---------------------------------------------------------------
+		// Destinatários do envio de submissão de eventos.
+		// Para alterar quem recebe, altere apenas esta lista.
+		//
+		// ATENÇÃO: lista temporária de TESTE em produção — recebe apenas
+		// o Carlos. Depois de validarmos o fluxo, repor a lista final:
+		//   'nuno.barradas@lebillet.eu'  => 'Nuno Barradas',
+		//   'yasmin.azevedo@lebillet.eu' => 'Yasmin Azevedo',
+		//   'diogo.silva@lebillet.eu'    => 'Diogo Silva',
+		//   'junior@idera.com.br'        => 'Junior',
+		// ---------------------------------------------------------------
+		$eventSubmissionEmails = array(
+			'carlosnetolima@gmail.com' => 'Carlos Lima',
+		);
+
+		// Email para a equipa (com anexos)
 		$sendMail = $this->getDI()->getMail()->send(
-			array(
-				//'atendimento@lebillet.eu' => 'atendimento@lebillet.eu',
-				$email => $email
-			),
+			$eventSubmissionEmails,
 			$this->config->company->full_name . ' | ' . $subject,
 			'event-create',
 			$param,

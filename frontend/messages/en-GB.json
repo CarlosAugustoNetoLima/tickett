@@ -222,7 +222,8 @@
       "alertGeneric": "There are required fields missing or with invalid data. Please check the fields marked below.",
       "continuar": "Continue",
       "confirmar": "Confirm",
-      "submitError": "We couldn't send your request. Please try again in a few minutes."
+      "submitError": "We couldn't send your request. Please try again in a few minutes.",
+      "recaptchaRequired": "Please confirm you are not a robot."
     },
     "topBar": {
       "back": "Back",
