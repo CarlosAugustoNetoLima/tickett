@@ -61,7 +61,7 @@
 											<table   cellspacing="20" cellpadding="0" border="0" align="center" style="  width:100%;">
 												<tr>
 													<td width="100%" align="center" valign="top" style=" ">
-														<img src="{{ config.company.email_logo }}" alt="{{ config.company.name }}" style="width: 200px; height: auto;" />
+														<img src="https://tickett.com/brand/logo_dark.png" alt="Tickett" style="width: 200px; height: auto;" />
 													</td>
 												</tr>
 											</table>
@@ -233,7 +233,7 @@
 										<?php if(isset($order->ticket_bolt)) { ?>
 									<tr>
 											<td align="center" valign="top" style=" ">
-												<img src="{{ config.company.email_logo }}" alt="{{ config.company.name }}" style="width: 200px; height: auto;" />
+												<img src="https://tickett.com/brand/logo_dark.png" alt="Tickett" style="width: 200px; height: auto;" />
 												<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
 												<img src="{{ url() }}{{ config.company.logos }}Bolt_logo.png" style="width: 130px;" />
 											</td>

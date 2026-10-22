@@ -72,9 +72,6 @@ $config2 = array(
 		'name' => 'Tickett',
 		'full_name' => 'tickett.com',
 		'logos' => 'logos/lebillet_pt/',
-		// Logo usado nos e-mails transacionais (URL absoluto: o path /logos/ nao e
-		// servido no tickett.com, os assets da marca vivem em /brand/).
-		'email_logo' => 'https://tickett.com/brand/logo_dark.png',
 		'email' => 'atendimento@tickett.com',
 		'email_pre' => 'atendimento',
 		'email_domain' => 'tickett.com',

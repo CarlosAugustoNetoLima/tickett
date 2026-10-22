@@ -74,8 +74,6 @@ $config2 = array(
 		'name' => 'Tiktx',
 		'full_name' => 'tiktx.com',
 		'logos' => 'logos/tiktx/',
-		// Logo usado nos e-mails transacionais (URL absoluto).
-		'email_logo' => 'https://tiktx.com/logos/tiktx/logo.png',
 		'email' => 'contact@tiktx.com',
 		'email_pre' => 'contact',
 		'email_domain' => 'tiktx.com',

@@ -28,7 +28,7 @@
 											<table   cellspacing="20" cellpadding="0" border="0" align="center" style="  width:100%;">
 												<tr>
 													<td width="100%" align="center" valign="top" style=" ">
-														<img src="{{ config.company.email_logo }}" alt="{{ config.company.name }}" style="width: 200px; height: auto;" />
+														<img src="https://tickett.com/brand/logo_dark.png" alt="Tickett" style="width: 200px; height: auto;" />
 													</td>
 												</tr>
 											</table>
