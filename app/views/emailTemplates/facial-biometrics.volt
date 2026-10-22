@@ -112,7 +112,7 @@
 
 								<p><br></p>
 
-								<a target="_blank" href="{{ url() }}"><img src="{{ url() }}{{ config.company.logos }}logo.png" /></a>
+								<a target="_blank" href="{{ url() }}"><img src="{{ config.company.email_logo }}" alt="{{ config.company.name }}" style="width: 200px; height: auto;" /></a>
 
 								&nbsp; &nbsp; &nbsp;
 

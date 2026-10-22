@@ -70,6 +70,8 @@ $config2 = array(
 		'name' => 'LeBillet',
 		'full_name' => 'lebillet.com.br',
 		'logos' => 'logos/lebillet/',
+		// Logo usado nos e-mails transacionais (URL absoluto).
+		'email_logo' => 'https://lebillet.com.br/logos/lebillet/logo.png',
 		'email' => 'atendimento@lebillet.com.br',
 		'email_pre' => 'atendimento',
 		'email_domain' => 'lebillet.com.br',
