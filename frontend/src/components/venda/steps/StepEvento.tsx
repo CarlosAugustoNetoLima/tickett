@@ -188,7 +188,7 @@ export function StepEvento({ data, errors, onChange }: StepEventoProps) {
               required
               accept="image/jpeg,image/png,image/webp"
               maxSizeMB={5}
-              requiredDimensions={{ width: 1430, height: 340 }}
+              requiredDimensions={{ width: 1440, height: 340 }}
               files={data.banner}
               error={errors.banner}
               onChange={(files) => set("banner", files)}

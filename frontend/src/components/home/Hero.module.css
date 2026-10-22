@@ -64,7 +64,9 @@
   position: relative;
   display: block;
   width: 100%;
-  height: 340px;
+  /* Moldura na proporção do banner do formulário (1440×340). A imagem entra com "contain"
+     (fit): se fugir desta proporção, aparece o fundo desfocado do FittedImage atrás. */
+  aspect-ratio: 1440 / 340;
   overflow: hidden;
 }
 
@@ -245,6 +247,7 @@
 
 @media (max-width: 767px) {
   .imageWrap {
+    aspect-ratio: auto;
     height: 240px;
   }
 
