@@ -558,16 +558,12 @@ class IndexController extends ControllerBase
 		// ---------------------------------------------------------------
 		// Destinatários do envio de submissão de eventos.
 		// Para alterar quem recebe, altere apenas esta lista.
-		//
-		// ATENÇÃO: lista temporária de TESTE em produção — recebe apenas
-		// o Carlos. Depois de validarmos o fluxo, repor a lista final:
-		//   'nuno.barradas@lebillet.eu'  => 'Nuno Barradas',
-		//   'yasmin.azevedo@lebillet.eu' => 'Yasmin Azevedo',
-		//   'diogo.silva@lebillet.eu'    => 'Diogo Silva',
-		//   'junior@idera.com.br'        => 'Junior',
 		// ---------------------------------------------------------------
 		$eventSubmissionEmails = array(
-			'carlosnetolima@gmail.com' => 'Carlos Lima',
+			'nuno.barradas@lebillet.eu'  => 'Nuno Barradas',
+			'yasmin.azevedo@lebillet.eu' => 'Yasmin Azevedo',
+			'diogo.silva@lebillet.eu'    => 'Diogo Silva',
+			'junior@idera.com.br'        => 'Junior',
 		);
 
 		// Email para a equipa (com anexos)
