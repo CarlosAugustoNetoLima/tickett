@@ -565,7 +565,7 @@
   },
   "eventoDetalhe": {
     "imagePlaceholder": "Imagen aún no disponible",
-    "doorsLabel": "Puertas {time}",
+    "doorsLabel": "Apertura de Puertas {time}",
     "about": "SOBRE EL EVENTO",
     "readMore": "Ver más",
     "readLess": "Ver menos",

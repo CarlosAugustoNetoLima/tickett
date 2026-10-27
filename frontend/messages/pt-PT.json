@@ -566,7 +566,7 @@
   },
   "eventoDetalhe": {
     "imagePlaceholder": "Imagem ainda não cadastrada",
-    "doorsLabel": "Portas {time}",
+    "doorsLabel": "Abertura de Portas {time}",
     "about": "SOBRE O EVENTO",
     "readMore": "Ver mais",
     "readLess": "Ver menos",

@@ -566,7 +566,7 @@
   },
   "eventoDetalhe": {
     "imagePlaceholder": "Image not yet uploaded",
-    "doorsLabel": "Doors {time}",
+    "doorsLabel": "Doors Open {time}",
     "about": "ABOUT THE EVENT",
     "readMore": "Show more",
     "readLess": "Show less",
